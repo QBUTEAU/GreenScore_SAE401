@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { ref, computed } from 'vue'
-import router from '@/router';
+import router from '../router';
 
 </script>
 

@@ -8,8 +8,8 @@ import Presentation from './views/Presentation.vue'
 
 <template>
   
-  <!-- <section>
-    <h1>TEST DE LA VUE</h1>
+  <section>
+    <h1>PAGE APP.VUE</h1>
     <div class="presentation">
       <div class="presentation__img">
         <img src="@/assets/img/logo.png" alt="greenscore" height="350px">
@@ -25,7 +25,8 @@ import Presentation from './views/Presentation.vue'
         </div>
       </div>
     </div>
-  </section> -->
+
+  </section>
 
 </template>
 
