@@ -1,14 +1,12 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { ref, computed } from 'vue'
-import router from './router';
-import Presentation from './views/Presentation.vue'
-
+import router from '../router';
+import Presentation from './Presentation.vue'
 </script>
 
 <template>
-  
-  <!-- <section>
+    <section>
     <h1>TEST DE LA VUE</h1>
     <div class="presentation">
       <div class="presentation__img">
@@ -25,10 +23,6 @@ import Presentation from './views/Presentation.vue'
         </div>
       </div>
     </div>
-  </section> -->
 
+  </section>
 </template>
-
-<style scoped>
-
-</style>
