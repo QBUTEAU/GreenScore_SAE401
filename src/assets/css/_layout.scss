@@ -1,0 +1,14 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: $brown;
+    font-weight: 700;
+    a{
+        margin: 0 5px;
+        color: $brown;
+        text-underline-offset: 5px;
+    }
+}

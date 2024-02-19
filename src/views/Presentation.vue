@@ -2,45 +2,43 @@
 import { RouterLink, RouterView } from "vue-router";
 import { ref, computed } from "vue";
 import router from "../router";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
   <section>
     <div class="presentation">
+      
       <div class="presentation__img">
         <img class="logo" src="@/assets/img/logo.png" alt="greenscore"/>
       </div>
+
       <div class="presentation__texte">
-        <div>
           <h2>Qu'est-ce que GreenScore ?</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-            expedita quia labore! Pariatur provident ullam dolorum earum labore
-            praesentium, sapiente dolor exercitationem, vitae fuga recusandae.
+            GreenScore est une application web basée sur un questionnaire en ligne 
+            engageant, sur la thématique de l'écologie. Inspiré des tests de pureté 
+            et de personnalité, GreenScore met en avant 20 questions sur des situations 
+            en lien avec le mode de vie écologique. En utilisant une approche ludique 
+            et instructive, nous avons pour but de sensibiliser chaque utilisateur à 
+            l'impact de leurs choix quotidiens sur l'environnement.
           </p>
           <p>
-            Eveniet consequuntur error, sequi blanditiis explicabo, quam unde
-            aspernatur facilis maxime nesciunt nobis fuga eligendi aliquid quas
-            ipsam numquam excepturi maiores quibusdam ex, quo quia.
+            Chaque question est soigneusement élaborée de sorte à ce que chaque utilisateur 
+            s'identifie à la situation, le tout dans divers aspects de la vie quotidienne, 
+            tels que la consommation d'énergie, la gestion des déchets ou les modes de transport. 
+            L'objectif est de fournir une évaluation holistique de l'empreinte écologique de chacun.
           </p>
           <p>
-            Minus, voluptas fugiat esse aperiam tempore quibusdam hic, quaerat
-            totam omnis aut laborum cupiditate pariatur a temporibus alias.
-            Explicabo maiores, sit incidunt fuga quibusdam dolorem.
+            GreenScore n'est pas simplement un questionnaire en ligne, c'est une exploration 
+            interactive de l'impact de chacun sur la planète, une invitation à la prise de 
+            conscience et à l'engagement vers un avenir et un monde plus vert !
           </p>
-          <p>
-            Dolor incidunt nulla sint aliquam fugit numquam, vero officiis
-            voluptatem similique eos laborum ipsa perferendis! Sapiente voluptates
-            eos facere laboriosam. Ex sed aut neque eveniet!
-          </p>
-          <p>
-            Quos est quis illo ullam architecto doloremque, dolor laborum optio
-            soluta blanditiis adipisci quia nisi? Facere, fugit! Incidunt,
-            corporis dicta. Ullam qui cum deleniti velit.
-          </p>
-        </div>
       </div>
     </div>
   </section>
+
+  <Footer />
+
 </template>
 
