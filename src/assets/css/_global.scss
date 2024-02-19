@@ -1,0 +1,22 @@
+// Colors
+$white : #F1F1F1;
+$black : #000000;
+$brown : #57210B;
+$green : #006837;
+$yellow : #C1951F;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$font: 'Montserrat', sans-serif;
+
+body{
+    margin: 0;
+    background-color: $white;
+    font-family: $font;
+}
+
+section{
+    height: 100vh;
+    @include flexOriginel(column, center, center);
+    gap: 45px;
+}
