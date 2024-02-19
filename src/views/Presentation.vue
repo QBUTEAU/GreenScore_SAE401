@@ -8,7 +8,7 @@ import router from "../router";
   <section>
     <div class="presentation">
       <div class="presentation__img">
-        <img src="@/assets/img/logo.png" alt="greenscore" height="350px" />
+        <img class="logo" src="@/assets/img/logo.png" alt="greenscore"/>
       </div>
       <div class="presentation__texte">
         <div>

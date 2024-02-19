@@ -14,9 +14,49 @@ body{
     background-color: $white;
     font-family: $font;
 }
-
 section{
     height: 100vh;
     @include flexOriginel(column, center, center);
-    gap: 45px;
+    gap: 30px;
+}
+.logo{
+    height:350px;
+}
+
+%button{
+    color: $white;
+    background-color: $green;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 10px;
+    font-family: $font;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.25s;
+    span{
+        display: inline-block;
+        position: relative;
+        transition: 0.25s;
+        &:after{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: -5px;
+            right: -20px;
+            transition: 0.25s;
+        }
+    }
+    &:hover span{
+        padding-right: 25px;
+        &:after{
+            opacity: 1;
+            right: 0;
+        }
+    }
 }
