@@ -1,3 +1,7 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$font: 'Montserrat', sans-serif;
+
 // Colors
 $white : #F1F1F1;
 $black : #000000;
@@ -5,24 +9,26 @@ $brown : #57210B;
 $green : #006837;
 $yellow : #C1951F;
 
-// Fonts
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-$font: 'Montserrat', sans-serif;
+*{
+    font-family: $font;
+}
 
 body{
     margin: 0;
     background-color: $white;
-    font-family: $font;
 }
+
 section{
     height: 100vh;
     @include flexOriginel(column, center, center);
     gap: 30px;
 }
+
 .logo{
     height:350px;
 }
 
+// Placeholders
 %button{
     color: $white;
     background-color: $green;
@@ -35,6 +41,7 @@ section{
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.25s;
+
     span{
         display: inline-block;
         position: relative;
@@ -47,11 +54,12 @@ section{
             content: '\00bb';
             position: absolute;
             opacity: 0;
-            top: -5px;
+            top: -5.5px;
             right: -20px;
             transition: 0.25s;
         }
     }
+
     &:hover span{
         padding-right: 25px;
         &:after{
