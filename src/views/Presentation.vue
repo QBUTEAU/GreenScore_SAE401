@@ -2,17 +2,19 @@
 import { RouterLink, RouterView } from "vue-router";
 import { ref, computed } from "vue";
 import router from "../router";
+import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
+
+  <Header />
+
   <section>
     <div class="presentation">
-      
       <div class="presentation__img">
         <img class="logo" src="@/assets/img/logo.png" alt="greenscore"/>
       </div>
-
       <div class="presentation__texte">
           <h2>Qu'est-ce que GreenScore ?</h2>
           <p>
