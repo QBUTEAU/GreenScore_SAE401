@@ -9,6 +9,8 @@ $brown : #57210B;
 $green : #006837;
 $yellow : #C1951F;
 
+$blue : #47bbed;
+
 // Scrollbar
 ::-webkit-scrollbar{
     width: 10px;
@@ -31,12 +33,6 @@ body{
     margin: 0;
     background-color: $white;
     overflow-x: hidden;
-}
-
-section{
-    min-height: 100vh;
-    @include flexOriginel(column, center, center);
-    gap: 30px;
 }
 
 .logo{

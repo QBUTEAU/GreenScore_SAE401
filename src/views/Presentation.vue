@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import { ref, computed } from "vue";
+import { ref, computed, onMounted } from "vue";
 import router from "../router";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
@@ -10,11 +10,11 @@ import Footer from "@/components/Footer.vue";
 
   <Header />
 
-  <section>
-    <div class="presentation">
-      <div class="presentation__img">
-        <img class="logo" src="@/assets/img/logo.png" alt="greenscore"/>
-      </div>
+    <section class="presentation">
+      <div class="presentation__planet">
+          <img src="@/assets/img/planisphere.svg" alt="planet"/>
+          <img src="@/assets/img/planisphere.svg" alt="planet"/>
+        </div>
       <div class="presentation__texte">
           <h2>Qu'est-ce que GreenScore ?</h2>
           <p>
@@ -37,8 +37,39 @@ import Footer from "@/components/Footer.vue";
             conscience et à l'engagement vers un avenir et un monde plus vert !
           </p>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="ecologie">
+      <div class="ecologie__axes">
+        <p>Nous pensons que tout le monde a une empreinte écologique unique et le pouvoir
+          d'apporter des changements positifs au sein de notre planète. GreenScore est une
+          expérience engageante conçue pour vous aider à découvrir et à comprendre votre 
+          empreinte écologique personnelle et à vous donner les moyens de la réduire.
+        </p>
+        <p>
+          🌿 <strong>Explorez votre impact</strong> : Répondez à notre questionnaire interactif 
+            pour découvrir comment vos choix quotidiens influent sur l'environnement. De la manière 
+            dont vous consommez l'énergie à vos habitudes de consommation, ou par l'utilisation
+  	        de produits pouvant impacter l'environnement.
+        </p>
+        <p>
+          🌍 <strong>Conscience écologique</strong> : Nous sommes là pour vous aider à prendre 
+          conscience de vos habitudes et à identifier des moyens pratiques d'adopter un mode de vie 
+          plus respectueux de l'environnement.
+        </p>
+        <p>
+          🌱 <strong>Des résultats personnalisés</strong> : À la fin du questionnaire, recevez des résultats personnalisés, 
+          des conseils écologiques et des suggestions pour amplifier votre impact positif.
+        </p>
+        <p>
+          Rejoignez-nous dans cette aventure écologique et explorons ensemble notre potentiel de 
+          changement afin d'oeuvrer pour un monde plus vert ! 🌳
+        </p>
+      </div>
+      <div class="ecologie__img">
+          <img class="logo" src="@/assets/img/logo.png" alt="greenscore"/>
+      </div>
+    </section>
 
   <Footer />
 
