@@ -12,7 +12,12 @@ const router = createRouter({
       path: "/presentation",
       name: "presentation",
       component: () => import("/src/views/Presentation.vue"),
-    }
+    },
+    {
+      path: "/questest",
+      name: "/questest",
+      component: () => import("/src/views/Questest.vue"),
+    },
   ],
 });
 
