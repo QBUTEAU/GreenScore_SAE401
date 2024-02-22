@@ -16,7 +16,7 @@ const router = createRouter({
     {
       path: "/questest",
       name: "/questest",
-      component: () => import("/src/views/Questest.vue"),
+      component: () => import("/src/views/QuesTest.vue"),
     },
   ],
 });
