@@ -97,10 +97,6 @@ export default {
           text: "Quelle est votre attitude envers la consommation d'énergie à la maison ?",
           answers: [
             {
-              text: "Je laisse souvent les lumières allumées et ne fais pas attention à ma consommation électrique.",
-              points: 2,
-            },
-            {
               text: "J'utilise des ampoules LED et éteins les lumières inutiles.",
               points: 4,
             },
