@@ -5,7 +5,7 @@
     <h1>Questionnaire Vue.js</h1>
 
     <div v-if="currentQuestion !== null">
-      <p>{{ questions[currentQuestion].text }}</p>
+      <p>{{ getQuestionIndicator }} - {{ questions[currentQuestion].text }}</p>
       <ul>
         <li
           v-for="(answer, aIndex) in questions[currentQuestion].answers"
@@ -364,6 +364,27 @@ export default {
           ],
         },
         {
+          text: "Comment contribuez-vous ou envisagez-vous de contribuer aux associations environnementales ou de conservation ?",
+          answers: [
+            {
+              text: "Je ne suis pas impliqué(e) dans des associations environnementales. ",
+              points: 1,
+            },
+            {
+              text: "J'apprécie les actions des associations environnementales, mais je ne suis pas actuellement impliqué(e).",
+              points: 2,
+            },
+            {
+              text: "J'ai déjà participé à des actions ponctuelles ou fait des dons à des associations environnementales.",
+              points: 3,
+            },
+            {
+              text: "Je suis activement membre d'associations environnementales ou de conservation, contribuant régulièrement à des initiatives et des projets.",
+              points: 4,
+            },
+          ],
+        },
+        {
           text: "Considérez-vous les problèmes environnementaux comme une priorité dans votre vie quotidienne ?",
           answers: [
             {
@@ -392,6 +413,9 @@ export default {
     };
   },
   computed: {
+    getQuestionIndicator() {
+      return `Question ${this.currentQuestion + 1}`;
+    },
     getCategory() {
       if (this.totalScore >= 61 && this.totalScore <= 80) {
         return 1;
