@@ -47,7 +47,7 @@ body{
     padding: 7px 20px;
     border-radius: 10px;
     font-family: $font;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
@@ -65,7 +65,7 @@ body{
             content: '\00bb';
             position: absolute;
             opacity: 0;
-            top: -5.5px;
+            top: -8px;
             right: -20px;
             transition: 0.25s;
         }

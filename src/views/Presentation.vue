@@ -71,6 +71,12 @@ import Footer from "@/components/Footer.vue";
       </div>
     </section>
 
+    <RouterLink to="/questionnairetest">
+      <button class="button">
+        <span>Commencez quiz</span>
+      </button>
+    </RouterLink>
+
   <Footer />
 
 </template>
