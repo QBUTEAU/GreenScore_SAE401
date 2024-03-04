@@ -26,10 +26,7 @@
         <div class="fill" :style="{ width: progressPercentage + '%' }"></div>
       </div>
 
-      <button
-        @click="nextQuestion"
-        :disabled="!selectedAnswers[currentQuestion]"
-      >
+      <button @click="nextQuestion" :disabled="!selectedAnswers[currentQuestion]">
         Question suivante
       </button>
     </div>
