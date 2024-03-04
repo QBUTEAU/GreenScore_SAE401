@@ -63,7 +63,7 @@ import Footer from "@/components/Footer.vue";
         </p>
         <p>
           Rejoignez-nous dans cette aventure écologique et explorons ensemble notre potentiel de 
-          changement afin d'oeuvrer pour un monde plus vert ! 🌳
+          changement afin d'œuvrer pour un monde plus vert ! 🌳
         </p>
       </div>
       <div class="ecologie__img">

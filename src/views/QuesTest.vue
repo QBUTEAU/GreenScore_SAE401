@@ -52,7 +52,7 @@ export default {
           text: "Comment préférez-vous vous déplacer au quotidien ?",
           answers: [
             { text: "En voiture diesel ou essence", points: 1 },
-            { text: "En voiture diesel ou essence", points: 2 },
+            { text: "En voiture électrique ou hybride", points: 2 },
             { text: "Les transports en commun", points: 3 },
             { text: "La marche à pied ou le vélo", points: 4 },
           ],
