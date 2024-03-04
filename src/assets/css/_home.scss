@@ -92,6 +92,11 @@
 
 }
 
+.presentation__button{
+    text-align: center;
+    margin-bottom: 15vh;
+}
+
 @media screen and (min-width:1100px) and (max-width: 1270px){
     .presentation, .ecologie{
         gap: 3rem;
