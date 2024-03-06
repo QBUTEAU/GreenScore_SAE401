@@ -80,6 +80,12 @@ body{
     }
 }
 
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 @keyframes rotationPlanet {
     0% {
         transform: translateX(0%);

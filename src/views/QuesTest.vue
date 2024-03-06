@@ -1,35 +1,32 @@
 <!-- QuesTest.vue -->
 
 <template>
-  <div>
-    <h1>Questionnaire Vue.js</h1>
+  <main class="questionnaire">
 
-    <div v-if="currentQuestion !== null">
-      <p>{{ getQuestionIndicator }} - {{ questions[currentQuestion].text }}</p>
-      <ul>
-        <li
-          v-for="(answer, aIndex) in questions[currentQuestion].answers"
-          :key="aIndex"
-        >
-          <label>
-            <input
-              type="radio"
-              :name="'q' + currentQuestion"
-              :value="answer.points"
-              v-model="selectedAnswers[currentQuestion]"
-            />
-            {{ answer.text }}
-          </label>
+      <div class="progress-bar">
+        <div class="progress-bar__fill" :style="{ width: progressPercentage + '%' }">
+          <span class="progress-bar__percentage">{{ progressPercentage.toFixed(0) }}%</span>
+        </div>
+      </div>
+    
+    <fieldset v-if="currentQuestion !== null">
+      <legend class="question">
+        {{ getQuestionIndicator }} - 
+        {{ questions[currentQuestion].text }}
+      </legend>
+      <ul class="propositions" role="radiogroup">
+        <li v-for="(answer, aIndex) in questions[currentQuestion].answers" :key="aIndex">
+          <input type="radio" 
+            :name="'q' + currentQuestion" 
+            :value="answer.points" 
+            v-model="selectedAnswers[currentQuestion]"/>
+          <label :for="'q' + currentQuestion + 'a' + aIndex"><span class="answers">{{ answer.text }}</span></label>
         </li>
       </ul>
-      <div class="progress-bar">
-        <div class="fill" :style="{ width: progressPercentage + '%' }"></div>
-      </div>
-
-      <button @click="nextQuestion" :disabled="!selectedAnswers[currentQuestion]">
+      <button class="button" @click="nextQuestion" :disabled="!selectedAnswers[currentQuestion]">
         Question suivante
       </button>
-    </div>
+    </fieldset>
 
     <div v-else>
       <p>
@@ -37,7 +34,7 @@
         Vous êtes dans la catégorie {{ getCategory }}.
       </p>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -448,17 +445,8 @@ export default {
 </script>
 
 <style scoped>
-.progress-bar {
-  width: 100%;
-  height: 20px;
-  background-color: #ccc;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.fill {
-  height: 100%;
-  background-color: #4caf50;
-  transition: width 0.5s ease-in-out;
+button{
+  text-align: center;
+  gap: 30px;
 }
 </style>
