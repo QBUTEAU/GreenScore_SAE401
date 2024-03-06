@@ -1,8 +1,15 @@
 <!-- QuesTest.vue -->
 
-<template>
-  <main class="questionnaire">
+<script setup>
+import { ref, computed, onMounted } from "vue";
+import Header from "@/components/Header.vue";
+</script>
 
+<template>
+
+  <Header />
+
+  <main class="questionnaire">
       <div class="progress-bar">
         <div class="progress-bar__fill" :style="{ width: progressPercentage + '%' }">
           <span class="progress-bar__percentage">{{ progressPercentage.toFixed(0) }}%</span>
@@ -23,8 +30,8 @@
           <label :for="'q' + currentQuestion + 'a' + aIndex"><span class="answers">{{ answer.text }}</span></label>
         </li>
       </ul>
-      <button class="button" @click="nextQuestion" :disabled="!selectedAnswers[currentQuestion]">
-        Question suivante
+      <button class="button buttonQuestionnaire" @click="nextQuestion" :disabled="!selectedAnswers[currentQuestion]">
+        <span>Question suivante</span>
       </button>
     </fieldset>
 
@@ -38,6 +45,10 @@
 </template>
 
 <script>
+
+import Header from "@/components/Header.vue";
+import { RouterLink, RouterView } from "vue-router";
+
 export default {
   data() {
     return {
