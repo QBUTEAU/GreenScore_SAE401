@@ -6,31 +6,46 @@ import Header from "@/components/Header.vue";
 </script>
 
 <template>
-
   <Header />
 
   <main class="questionnaire">
-      <div class="progress-bar">
-        <div class="progress-bar__fill" :style="{ width: progressPercentage + '%' }">
-          <span class="progress-bar__percentage">{{ progressPercentage.toFixed(0) }}%</span>
-        </div>
+    <div class="progress-bar">
+      <div
+        class="progress-bar__fill"
+        :style="{ width: progressPercentage + '%' }"
+      >
+        <span class="progress-bar__percentage"
+          >{{ progressPercentage.toFixed(0) }}%</span
+        >
       </div>
-    
+    </div>
+
     <fieldset v-if="currentQuestion !== null">
       <legend class="question">
-        {{ getQuestionIndicator }} - 
+        {{ getQuestionIndicator }} -
         {{ questions[currentQuestion].text }}
       </legend>
       <ul class="propositions" role="radiogroup">
-        <li v-for="(answer, aIndex) in questions[currentQuestion].answers" :key="aIndex">
-          <input type="radio" 
-            :name="'q' + currentQuestion" 
-            :value="answer.points" 
-            v-model="selectedAnswers[currentQuestion]"/>
-          <label :for="'q' + currentQuestion + 'a' + aIndex"><span class="answers">{{ answer.text }}</span></label>
+        <li
+          v-for="(answer, aIndex) in questions[currentQuestion].answers"
+          :key="aIndex"
+        >
+          <input
+            type="radio"
+            :name="'q' + currentQuestion"
+            :value="answer.points"
+            v-model="selectedAnswers[currentQuestion]"
+          />
+          <label :for="'q' + currentQuestion + 'a' + aIndex"
+            ><span class="answers">{{ answer.text }}</span></label
+          >
         </li>
       </ul>
-      <button class="button buttonQuestionnaire" @click="nextQuestion" :disabled="!selectedAnswers[currentQuestion]">
+      <button
+        class="button buttonQuestionnaire"
+        @click="nextQuestion"
+        :disabled="!selectedAnswers[currentQuestion]"
+      >
         <span>Question suivante</span>
       </button>
     </fieldset>
@@ -45,7 +60,6 @@ import Header from "@/components/Header.vue";
 </template>
 
 <script>
-
 import Header from "@/components/Header.vue";
 import { RouterLink, RouterView } from "vue-router";
 
@@ -456,7 +470,7 @@ export default {
 </script>
 
 <style scoped>
-button{
+button {
   text-align: center;
   gap: 30px;
 }
