@@ -51,19 +51,19 @@ import Footer from "@/components/Footer.vue";
         vous donner les moyens de la réduire.
       </p>
       <p>
-        🌿 <strong>Explorez votre impact</strong> : Répondez à notre
+        🌿 <strong>Explorez votre impact :</strong> Répondez à notre
         questionnaire interactif pour découvrir comment vos choix quotidiens
         influent sur l'environnement. De la manière dont vous consommez
         l'énergie à vos habitudes de consommation, ou par l'utilisation de
         produits pouvant impacter l'environnement.
       </p>
       <p>
-        🌍 <strong>Conscience écologique</strong> : Nous sommes là pour vous
+        🌍 <strong>Conscience écologique :</strong> Nous sommes là pour vous
         aider à prendre conscience de vos habitudes et à identifier des moyens
         pratiques d'adopter un mode de vie plus respectueux de l'environnement.
       </p>
       <p>
-        🌱 <strong>Des résultats personnalisés</strong> : À la fin du
+        🌱 <strong>Des résultats personnalisés :</strong> À la fin du
         questionnaire, recevez des résultats personnalisés, des conseils
         écologiques et des suggestions pour amplifier votre impact positif.
       </p>
@@ -73,7 +73,7 @@ import Footer from "@/components/Footer.vue";
       </p>
     </div>
     <div class="ecologie__img">
-      <img class="logo" src="@/assets/img/logo.png" alt="greenscore" />
+      <img class="emojis" src="@/assets/img/emojis.svg" alt="greenscore" />
     </div>
   </section>
 
