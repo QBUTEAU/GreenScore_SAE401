@@ -9,12 +9,14 @@ $brown : #57210B;
 $green : #006837;
 $yellow : #C1951F;
 
+$greenDarker : darken($green, 10%);
+
 $blue : #47bbed;
 
 // Scrollbar
 ::-webkit-scrollbar{
     width: 10px;
-    background-color: none;
+    background-color: $white;
 }
 ::-webkit-scrollbar-thumb{
     background-color: $green;
@@ -31,7 +33,7 @@ $blue : #47bbed;
 
 body{
     margin: 0;
-    background-color: $white;
+    background-color: $greenDarker;
     overflow-x: hidden;
 }
 
@@ -77,6 +79,10 @@ body{
             right: 0;
         }
     }
+}
+p{
+    font-size: 14px;
+    font-weight: 500;
 }
 
 ul{
