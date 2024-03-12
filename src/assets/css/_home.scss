@@ -91,7 +91,22 @@
     .ecologie__img{
         .emojis{
             width: 370px;
+            animation: balancement 3s infinite;
         }
+    }
+}
+
+@keyframes balancement {
+    0% {
+        transform: translateY(30px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(30px);
     }
 }
 
