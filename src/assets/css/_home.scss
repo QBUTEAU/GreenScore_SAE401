@@ -67,12 +67,6 @@
             font-weight: 500;
             line-height: 130%;
         }
-        h2{
-            font-size: 32px;
-            color: $white;
-            font-weight: 800;
-            text-align: center;
-        }
     }
 }
 
@@ -84,21 +78,17 @@
     .ecologie__axes{
         // box-shadow: 0px 0px 22px 8px rgba(0, 0, 0, 0.31);
         width: 44%;
-        font-size: 0.95em;
-        padding: 10px 30px;
-        border-radius: 10px;
-        background-color: $white;
-        color: $black;
-        font-weight: 500;
-        line-height: 130%;
+        .ecologie-texte__p{
+            font-size: 0.95em;
+            padding: 10px 30px;
+            border-radius: 10px;
+            background-color: $white;
+            color: $black;
+            font-weight: 500;
+            line-height: 130%;
+        }
         strong{
             color: $brown;
-        }
-        h2{
-            font-size: 27px;
-            color: $green;
-            font-weight: 800;
-            text-align: center;
         }
     }
     .ecologie__img{
