@@ -1,14 +1,23 @@
-<script setup>
-import { RouterLink,RouterView } from "vue-router";
-</script>
-
 <template>
-    <header class="header">
-        <RouterLink to="/">
-            <img src="@/assets/img/header.png" alt="GreenScore">
-        </RouterLink>
-    </header>
+  <header class="header">
+    <RouterLink to="/">
+      <img src="@/assets/img/header.png" alt="GreenScore" />
+    </RouterLink>
+    <button class="language-button" @click="toggleLanguage">
+      Changer de langue
+    </button>
+  </header>
 </template>
 
-<style scoped>
-</style>
+<script setup>
+import { ref, defineProps, defineEmits } from "vue";
+
+const { language } = defineProps(["language"]);
+const emit = defineEmits();
+
+const toggleLanguage = () => {
+  emit("toggleLanguage");
+};
+</script>
+
+<style scoped></style>

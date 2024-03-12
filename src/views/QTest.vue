@@ -1,7 +1,7 @@
 <template>
   <div>
+    <Header :language="language" @toggleLanguage="toggleLanguage" />
     <!-- En-tête -->
-    <Header />
 
     <main class="questionnaire">
       <!-- Barre de progression -->
@@ -17,9 +17,6 @@
       </div>
 
       <!-- Bouton pour changer de langue -->
-      <button class="language-button" @click="toggleLanguage">
-        Changer de langue
-      </button>
 
       <!-- Affichage des questions -->
       <fieldset v-if="currentQuestion !== null">
@@ -76,6 +73,10 @@ export default {
     const selectedAnswers = ref(Array.from({ length: 4 }, () => null));
     const totalScore = ref(0);
     const language = ref("fr"); // Défaut : français
+
+    const toggleLanguage = () => {
+      language.value = language.value === "fr" ? "en" : "fr";
+    };
 
     const progressPercentage = computed(
       () => ((currentQuestion.value + 1) / questions.value.length) * 100
@@ -143,10 +144,6 @@ export default {
       } else {
         currentQuestion.value = null;
       }
-    };
-
-    const toggleLanguage = () => {
-      language.value = language.value === "fr" ? "en" : "fr";
     };
 
     return {
