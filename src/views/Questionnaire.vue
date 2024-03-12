@@ -6,7 +6,7 @@ import Header from "@/components/Header.vue";
 </script>
 
 <template>
-  <Header />
+  <Header :language="language" @toggleLanguage="toggleLanguage" />
 
   <main class="questionnaire">
     <div class="progress-bar">
@@ -26,12 +26,16 @@ import Header from "@/components/Header.vue";
         {{ questions[currentQuestion].text }}
       </legend>
       <ul class="propositions" role="radiogroup">
-        <li v-for="(answer, aIndex) in questions[currentQuestion].answers" :key="aIndex">
+        <li
+          v-for="(answer, aIndex) in questions[currentQuestion].answers"
+          :key="aIndex"
+        >
           <input
             type="radio"
             :name="'q' + currentQuestion"
             :value="answer.points"
-            v-model="selectedAnswers[currentQuestion]"/>
+            v-model="selectedAnswers[currentQuestion]"
+          />
           <label :for="'q' + currentQuestion + 'a' + aIndex">
             <span class="answers">{{ answer.text }}</span>
           </label>
@@ -41,7 +45,8 @@ import Header from "@/components/Header.vue";
         class="button buttonQuestionnaire"
         @click="nextQuestion"
         :style="{ opacity: selectedAnswers[currentQuestion] ? 1 : 0 }"
-        :disabled="!selectedAnswers[currentQuestion]">
+        :disabled="!selectedAnswers[currentQuestion]"
+      >
         <span>Question suivante</span>
       </button>
     </fieldset>
