@@ -1,0 +1,53 @@
+[
+  {
+    "text": {
+      "fr": "Comment préférez-vous vous déplacer au quotidien ?",
+      "en": "How do you prefer to travel on a daily basis?"
+    },
+    "answers": [
+      { "text": { "fr": "En voiture", "en": "By car" }, "points": 1 },
+      { "text": { "fr": "En vélo", "en": "By bike" }, "points": 2 },
+      {
+        "text": { "fr": "En transport en commun", "en": "By public transport" },
+        "points": 3
+      },
+      { "text": { "fr": "À pied", "en": "On foot" }, "points": 4 }
+    ]
+  },
+  {
+    "text": {
+      "fr": "Comment gérez-vous vos achats de vêtements ?",
+      "en": "How do you manage your clothing purchases?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Sans trop me soucier de leur origine",
+          "en": "Without worrying too much about their origin"
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "En privilégiant les marques éthiques",
+          "en": "By favoring ethical brands"
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "En achetant d'occasion",
+          "en": "By buying second-hand"
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "En privilégiant les vêtements à bas prix",
+          "en": "By favoring low-priced clothing"
+        },
+        "points": 4
+      }
+    ]
+  }
+]
