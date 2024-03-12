@@ -5,13 +5,34 @@
       "en": "How do you prefer to travel on a daily basis?"
     },
     "answers": [
-      { "text": { "fr": "En voiture", "en": "By car" }, "points": 1 },
-      { "text": { "fr": "En vélo", "en": "By bike" }, "points": 2 },
       {
-        "text": { "fr": "En transport en commun", "en": "By public transport" },
+        "text": {
+          "fr": "En voiture diesel ou essence",
+          "en": "By diesel or petrol car"
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "En voiture électrique ou hybride",
+          "en": "By electric or hybrid car"
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "Les transports en commun",
+          "en": "By public transportation"
+        },
         "points": 3
       },
-      { "text": { "fr": "À pied", "en": "On foot" }, "points": 4 }
+      {
+        "text": {
+          "fr": "La marche à pied ou le vélo",
+          "en": "By walking or cycling"
+        },
+        "points": 4
+      }
     ],
     "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
   },
@@ -23,29 +44,621 @@
     "answers": [
       {
         "text": {
-          "fr": "Sans trop me soucier de leur origine",
-          "en": "Without worrying too much about their origin"
+          "fr": "J'achète des vêtements sans trop me soucier de leur origine.",
+          "en": "I buy clothes without paying much attention to their origin."
         },
         "points": 1
       },
       {
         "text": {
-          "fr": "En privilégiant les marques éthiques",
-          "en": "By favoring ethical brands"
+          "fr": "Je privilégie les vêtements à bas prix, peu importe leur impact écologique.",
+          "en": "I prioritize low-priced clothes, regardless of their environmental impact."
         },
         "points": 2
       },
       {
         "text": {
-          "fr": "En achetant d'occasion",
-          "en": "By buying second-hand"
+          "fr": "Je privilégie les marques éthiques et durables.",
+          "en": "I prioritize ethical and sustainable brands."
         },
         "points": 3
       },
       {
         "text": {
-          "fr": "En privilégiant les vêtements à bas prix",
-          "en": "By favoring low-priced clothing"
+          "fr": "J'achète des vêtements d'occasion.",
+          "en": "I buy second-hand clothes."
+        },
+        "points": 4
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Quelle est votre habitude face à l'utilisation des produits jetables ?",
+      "en": "What is your attitude towards the use of disposable products?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "J'essaye de réduire ma consommation de produits jetables.",
+          "en": "I try to reduce my consumption of disposable products."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "J'utilise fréquemment sans trop m'en soucier.",
+          "en": "I use them frequently without caring too much."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "Je préfère les produits jetables pour leur praticité.",
+          "en": "I prefer disposable products for their convenience."
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "J'utilise des ressources réutilisables.",
+          "en": "I use reusable resources."
+        },
+        "points": 4
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Quelle est votre attitude envers la consommation d'énergie à la maison ?",
+      "en": "What is your attitude towards energy consumption at home?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "J'utilise des ampoules LED et éteins les lumières inutiles.",
+          "en": "I use LED bulbs and turn off unnecessary lights."
+        },
+        "points": 4
+      },
+      {
+        "text": {
+          "fr": "J'ai installé des panneaux solaires sur ma maison.",
+          "en": "I have installed solar panels on my house."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "Je chauffe ou je refroidis la maison de manière excessive.",
+          "en": "I heat or cool the house excessively."
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "Je laisse souvent les lumières allumées sans trop me soucier de ma consommation électrique.",
+          "en": "I often leave lights on without caring too much about my electrical consumption."
+        },
+        "points": 2
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Comment choisissez-vous vos produits alimentaires au quotidien ?",
+      "en": "How do you choose your daily food products?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Je privilégie les produits transformés et emballés.",
+          "en": "I prioritize processed and packaged products."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "J'achète des produits locaux et/ou de saison.",
+          "en": "I buy local and/or seasonal products."
+        },
+        "points": 4
+      },
+      {
+        "text": {
+          "fr": "Je fais mes courses sans faire attention à l'origine ou à la saison.",
+          "en": "I shop without paying attention to the origin or season."
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "Je privilégie les produits biologiques.",
+          "en": "I prioritize organic products."
+        },
+        "points": 3
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Comment gérez-vous votre consommation d'eau à la maison ?",
+      "en": "How do you manage your water consumption at home?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Je prends des douches longues et laisse parfois le robinet ouvert.",
+          "en": "I take long showers and sometimes leave the tap open."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "J'utilise des pommeaux de douches et des robinets à faible débit.",
+          "en": "I use low-flow showerheads and faucets."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "J'utilise le lave-vaisselle et la machine à laver avec de petites charges.",
+          "en": "I use the dishwasher and washing machine with small loads."
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "J'adopte des pratiques économes pour optimiser l'utilisation de l'eau.",
+          "en": "I adopt economical practices to optimize water use."
+        },
+        "points": 4
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Comment choisissez-vous vos vacances pour minimiser votre impact environnemental ?",
+      "en": "How do you choose your vacations to minimize your environmental impact?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Je préfère les endroits proches de chez moi et j’utilise le moins possible mon véhicule.",
+          "en": "I prefer places close to home and use my vehicle as little as possible."
+        },
+        "points": 4
+      },
+      {
+        "text": {
+          "fr": "Je ne tiens pas compte de mon impact lors de la planification de mes vacances.",
+          "en": "I don't consider my impact when planning my vacations."
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "Je choisis souvent des destinations lointaines, et j'utilise mon véhicule.",
+          "en": "I often choose distant destinations and use my vehicle."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "J'essaie de limiter mes déplacements et de choisir des options respectueuses de l'environnement.",
+          "en": "I try to limit my travels and choose environmentally friendly options."
+        },
+        "points": 3
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Comment triez-vous vos déchets ménagers au quotidien ?",
+      "en": "How do you sort your household waste on a daily basis?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Je recycle activement et je composte mes déchets organiques.",
+          "en": "I actively recycle and compost my organic waste."
+        },
+        "points": 4
+      },
+      {
+        "text": {
+          "fr": "Je recycle certains déchets.",
+          "en": "I recycle some waste."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "Je mets l'ensemble de mes déchets dans la même poubelle.",
+          "en": "I put all my waste in the same bin."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "Je ne trie pas du tout mes déchets.",
+          "en": "I don't sort my waste at all."
+        },
+        "points": 1
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Comment réagissez-vous lorsque vous trouvez une canette de soda par terre dans la rue ?",
+      "en": "How do you react when you find a soda can on the ground in the street?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Je la laisse par terre, considérant que ce n'est pas ma responsabilité.",
+          "en": "I leave it on the ground, considering it's not my responsibility."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "Je la ramasse et la jette dans la première poubelle que je trouve.",
+          "en": "I pick it up and throw it in the nearest trash bin."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "Je la ramasse et la jette dans une poubelle de recyclage.",
+          "en": "I pick it up and throw it in a recycling bin."
+        },
+        "points": 4
+      },
+      {
+        "text": {
+          "fr": "Je passe à côté sans m'en soucier.",
+          "en": "I walk by without caring."
+        },
+        "points": 1
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Comment minimisez-vous votre utilisation de feuilles de papier ?",
+      "en": "How do you minimize your use of paper sheets?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Je limite l'impression et favorise les échanges numériques.",
+          "en": "I limit printing and prefer digital exchanges."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "J'imprime occasionnellement des documents mais privilégie les versions numériques.",
+          "en": "I occasionally print documents but prefer digital versions."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "Je n'imprime jamais de documents, favorisant une approche entièrement numérique.",
+          "en": "I never print documents, favoring an entirely digital approach."
+        },
+        "points": 4
+      },
+      {
+        "text": {
+          "fr": "J'imprime régulièrement tous les documents, même si je peux les avoir en version numérique.",
+          "en": "I regularly print all documents, even if I can have them in digital format."
+        },
+        "points": 1
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Vous souhaitez commander un repas auprès d’un fast-food situé à 10min à pied de chez vous ? Que faîtes-vous ?",
+      "en": "You want to order a meal from a fast-food restaurant that is a 10-minute walk from your home? What do you do?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Je commande régulièrement via des applications de livraison comme Uber Eats, même si le fast-food est proche.",
+          "en": "I regularly order through delivery apps like Uber Eats, even if the fast-food is close."
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "Je préfère me rendre à pied au fast-food pour éviter les frais de livraison.",
+          "en": "I prefer to walk to the fast-food to avoid delivery fees."
+        },
+        "points": 4
+      },
+      {
+        "text": {
+          "fr": "J'utilise occasionnellement des services de livraison, mais je vais souvent directement au fast-food.",
+          "en": "I occasionally use delivery services, but I often go directly to the fast-food."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "Je privilégie une approche entièrement numérique en commandant exclusivement en ligne et en me faisant livrer.",
+          "en": "I favor an entirely digital approach by ordering exclusively online and getting it delivered."
+        },
+        "points": 2
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Vous organisez une fête chez vous. Qu’utilisez-vous comme récipient pour servir ?",
+      "en": "You are hosting a party at your place. What do you use as a container for serving drinks?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Des verres réutilisables.",
+          "en": "Reusable glasses."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "Utiliser des verres en plastique jetables.",
+          "en": "Use disposable plastic glasses."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "Utiliser des gobelets en carton.",
+          "en": "Use cardboard cups."
+        },
+        "points": 4
+      },
+      {
+        "text": {
+          "fr": "Je fais boire les invités au goulot.",
+          "en": "I make guests drink from the bottle."
+        },
+        "points": 1
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Lorsque vous faites des achats de vêtements en ligne, quelle option privilégiez-vous pour minimiser votre impact environnemental et favoriser une approche durable ?",
+      "en": "When you shop for clothes online, which option do you prefer to minimize your environmental impact and favor a sustainable approach?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Opter pour la livraison à domicile, même si cela implique des emballages supplémentaires.",
+          "en": "Opt for home delivery, even if it involves additional packaging."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "Choisir l'option de retrait en magasin pour éviter les émissions liées à la livraison.",
+          "en": "Choose the option of in-store pickup to avoid emissions related to delivery."
+        },
+        "points": 4
+      },
+      {
+        "text": {
+          "fr": "Sélectionner des articles avec une expédition rapide, même si cela peut augmenter l'empreinte carbone.",
+          "en": "Select items with fast shipping, even if it may increase the carbon footprint."
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "Faire du Click and Collect pour limiter les émissions de CO2.",
+          "en": "Opt for Click and Collect to limit CO2 emissions."
+        },
+        "points": 2
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Comment vous vous débarrassez de vos vieux vêtements ?",
+      "en": "How do you get rid of your old clothes?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Les donner à des associations caritatives ou les vendre dans des friperies.",
+          "en": "Donate them to charities or sell them in thrift stores."
+        },
+        "points": 4
+      },
+      {
+        "text": {
+          "fr": "Les réutiliser en chiffon.",
+          "en": "Reuse them as rags."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "Les jeter à la poubelle.",
+          "en": "Throw them in the trash."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "Les brûler dans votre jardin.",
+          "en": "Burn them in your garden."
+        },
+        "points": 1
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Lorsque vous achetez des produits électroniques, comment éliminez-vous les anciens appareils que vous remplacez ?",
+      "en": "When you buy electronic products, how do you dispose of the old devices you replace?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Je les jette simplement à la poubelle.",
+          "en": "I simply throw them in the trash."
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "Je les recycle dans les points de collecte appropriés.",
+          "en": "I recycle them at the appropriate collection points."
+        },
+        "points": 4
+      },
+      {
+        "text": {
+          "fr": "Je les garde en tant que pièces de rechange.",
+          "en": "I keep them as spare parts."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "Je les donne à des organisations qui recyclent ou réutilisent les appareils électroniques.",
+          "en": "I donate them to organizations that recycle or reuse electronic devices."
+        },
+        "points": 2
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Utilisez-vous régulièrement l'application Too Good To Go pour acheter des paniers repas provenant de commerces locaux et comportant des produits proches de la date de péremption ?",
+      "en": "Do you regularly use the Too Good To Go app to buy meal kits from local businesses with products close to the expiration date?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Je ne suis pas utilisateur de Too Good To Go.",
+          "en": "I am not a user of Too Good To Go."
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "J'utilise l'application occasionnellement, en fonction des opportunités.",
+          "en": "I use the app occasionally, depending on opportunities."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "J'utilise fréquemment Too Good To Go pour réduire le gaspillage alimentaire.",
+          "en": "I frequently use Too Good To Go to reduce food waste."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "Je privilégie toujours Too Good To Go pour mes achats alimentaires.",
+          "en": "I always prefer Too Good To Go for my food purchases."
+        },
+        "points": 4
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Comment réagissez-vous face à la promotion de produits écologiques, même s'ils sont plus chers que les alternatives classiques ?",
+      "en": "How do you react to the promotion of ecological products, even if they are more expensive than conventional alternatives?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Je n'achète que les produits les moins chers, peu importe leur impact sur l'environnement.",
+          "en": "I only buy the cheapest products, regardless of their environmental impact."
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "Je considère parfois l'achat de produits écologiques, mais le prix est un facteur décisif.",
+          "en": "I sometimes consider buying ecological products, but price is a decisive factor."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "Je suis prêt à payer un peu plus cher pour des produits écologiques.",
+          "en": "I am willing to pay a little more for ecological products."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "Je privilégie toujours les produits écologiques, même s'ils sont plus chers.",
+          "en": "I always prioritize ecological products, even if they are more expensive."
+        },
+        "points": 4
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Comment choisissez-vous vos appareils électroménagers en termes d'efficacité énergétique ?",
+      "en": "How do you choose your household appliances in terms of energy efficiency?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Je ne tiens pas compte de l'efficacité énergétique lors de l'achat d'appareils électroménagers.",
+          "en": "I don't consider energy efficiency when buying household appliances."
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "Je considère parfois l'efficacité énergétique, mais d'autres facteurs sont plus importants.",
+          "en": "I sometimes consider energy efficiency, but other factors are more important."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "Je privilégie les appareils avec une efficacité énergétique élevée, même s'ils sont plus chers.",
+          "en": "I prioritize appliances with high energy efficiency, even if they are more expensive."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "Je choisis toujours des appareils avec la meilleure efficacité énergétique possible.",
+          "en": "I always choose appliances with the best possible energy efficiency."
         },
         "points": 4
       }
