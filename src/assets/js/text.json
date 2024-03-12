@@ -12,7 +12,8 @@
         "points": 3
       },
       { "text": { "fr": "À pied", "en": "On foot" }, "points": 4 }
-    ]
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
   },
   {
     "text": {
@@ -48,6 +49,7 @@
         },
         "points": 4
       }
-    ]
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
   }
 ]

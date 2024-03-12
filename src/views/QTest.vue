@@ -44,7 +44,7 @@
             @click="nextQuestion"
             :disabled="!selectedAnswers[currentQuestion]"
           >
-            <span>Question suivante</span>
+            <span>{{ currentQuestionNextButtonText }}</span>
           </button>
         </ul>
       </fieldset>
@@ -64,77 +64,27 @@
 <script>
 import Header from "@/components/Header.vue";
 import { ref, computed } from "vue";
+import questionsData from "@/assets/js/text.json"; // Assurez-vous d'ajuster le chemin d'accès correctement
 
 export default {
   components: {
     Header,
   },
   setup() {
-    const questions = [
-      {
-        text: {
-          fr: "Comment préférez-vous vous déplacer au quotidien ?",
-          en: "How do you prefer to travel on a daily basis?",
-        },
-
-        answers: [
-          { text: { fr: "En voiture", en: "By car" }, points: 1 },
-          { text: { fr: "En vélo", en: "By bike" }, points: 2 },
-          {
-            text: { fr: "En transport en commun", en: "By public transport" },
-            points: 3,
-          },
-          { text: { fr: "À pied", en: "On foot" }, points: 4 },
-        ],
-      },
-      {
-        text: {
-          fr: "Comment gérez-vous vos achats de vêtements ?",
-          en: "How do you manage your clothing purchases?",
-        },
-        answers: [
-          {
-            text: {
-              fr: "Sans trop me soucier de leur origine",
-              en: "Without worrying too much about their origin",
-            },
-            points: 1,
-          },
-          {
-            text: {
-              fr: "En privilégiant les marques éthiques",
-              en: "By favoring ethical brands",
-            },
-            points: 2,
-          },
-          {
-            text: { fr: "En achetant d'occasion", en: "By buying second-hand" },
-            points: 3,
-          },
-          {
-            text: {
-              fr: "En privilégiant les vêtements à bas prix",
-              en: "By favoring low-priced clothing",
-            },
-            points: 4,
-          },
-        ],
-      },
-    ];
-
+    const questions = ref(questionsData);
     const currentQuestion = ref(0);
     const selectedAnswers = ref(Array.from({ length: 4 }, () => null));
     const totalScore = ref(0);
     const language = ref("fr"); // Défaut : français
 
     const progressPercentage = computed(
-      () => ((currentQuestion.value + 1) / questions.length) * 100
+      () => ((currentQuestion.value + 1) / questions.value.length) * 100
     );
     const getQuestionIndicator = computed(
       () => `Question ${currentQuestion.value + 1}`
     );
     const currentQuestionText = computed(() => {
-      const question = questions[currentQuestion.value];
+      const question = questions.value[currentQuestion.value];
 
       if (question) {
         const textObject = question.text;
@@ -142,7 +92,6 @@ export default {
           language.value === "fr" ? textObject.fr : textObject.en;
 
         if (languageText) {
-          console.log("currentQuestionText:", languageText);
           return languageText;
         } else {
           console.error("Error: Unable to retrieve language-specific text.");
@@ -155,8 +104,32 @@ export default {
     });
 
     const currentQuestionAnswers = computed(
-      () => questions[currentQuestion.value].answers
+      () => questions.value[currentQuestion.value].answers
     );
+
+    const currentQuestionNextButtonText = computed(() => {
+      const question = questions.value[currentQuestion.value];
+
+      if (question && question.nextButtonText) {
+        const buttonTextObject = question.nextButtonText;
+        const languageButtonText =
+          language.value === "fr" ? buttonTextObject.fr : buttonTextObject.en;
+
+        if (languageButtonText) {
+          return languageButtonText;
+        } else {
+          console.error(
+            "Error: Unable to retrieve language-specific button text."
+          );
+          return "Error: Unable to retrieve language-specific button text.";
+        }
+      } else {
+        console.error(
+          "Error: Unable to retrieve question object or button text."
+        );
+        return "Error: Unable to retrieve question object or button text.";
+      }
+    });
 
     const getCategory = computed(() => {
       // ... (votre logique de catégorie)
@@ -165,7 +138,7 @@ export default {
     const nextQuestion = () => {
       totalScore.value += selectedAnswers.value[currentQuestion.value];
 
-      if (currentQuestion.value < questions.length - 1) {
+      if (currentQuestion.value < questions.value.length - 1) {
         currentQuestion.value++;
       } else {
         currentQuestion.value = null;
@@ -174,8 +147,6 @@ export default {
 
     const toggleLanguage = () => {
       language.value = language.value === "fr" ? "en" : "fr";
-      console.log("Language toggled to:", language.value);
-      console.log("Text Object:", questions[currentQuestion.value].text);
     };
 
     return {
@@ -188,6 +159,7 @@ export default {
       getQuestionIndicator,
       currentQuestionText,
       currentQuestionAnswers,
+      currentQuestionNextButtonText,
       getCategory,
       nextQuestion,
       toggleLanguage,
