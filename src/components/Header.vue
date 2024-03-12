@@ -4,7 +4,7 @@ import { RouterLink,RouterView } from "vue-router";
 
 <template>
     <header class="header">
-        <RouterLink to="/presentation">
+        <RouterLink to="/">
             <img src="@/assets/img/header.png" alt="GreenScore">
         </RouterLink>
     </header>

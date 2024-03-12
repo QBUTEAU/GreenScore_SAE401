@@ -17,7 +17,20 @@
         margin-top: 50px;
         svg{
             height: 40px;
+            animation: arrowAnimation 1s ease-in-out infinite;
         }
+    }
+}
+
+@keyframes arrowAnimation {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
     }
 }
   
@@ -248,8 +261,8 @@ fieldset{
 }
 
 @media screen and (max-width: 600px) {
-    .presentation {
-            margin-top: 100px;
+    .presentation, .ecologie {
+            min-height: 100vh;
         }
 
 }
