@@ -13,5 +13,5 @@ C'est une application web, à laquelle nous tenons compte d'un parcours utilisat
 ![SCSS Badge](https://img.shields.io/badge/Sass/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-### © [Quentin Buteau](http://qbuteau.fr/portfolio) - [Jathushan Selvarajah](http://mmi22g05.mmi-troyes.fr) - [Okesse Smith]() - [Axel Tribondeau](http://mmi22g11.mmi-troyes.fr/portfolio) | Tous droits réservés
+### © 2024 [Quentin Buteau](http://qbuteau.fr) - [Jathushan Selvarajah](http://mmi22g05.mmi-troyes.fr) - [Okesse Smith]() - [Axel Tribondeau](http://mmi22g11.mmi-troyes.fr/portfolio) | Tous droits réservés
  
