@@ -24,8 +24,7 @@
       <!-- Affichage des questions -->
       <fieldset v-if="currentQuestion !== null">
         <legend class="question">
-          {{ getQuestionIndicator }} - {{ currentQuestionText }} (Language:
-          {{ language }}, Current Question Index: {{ currentQuestion + 1 }})
+          {{ getQuestionIndicator }} - {{ currentQuestionText }}
         </legend>
         <ul class="propositions" role="radiogroup">
           <li v-for="(answer, aIndex) in currentQuestionAnswers" :key="aIndex">
@@ -74,8 +73,8 @@ export default {
     const questions = [
       {
         text: {
-          fr: "Question 1 : Comment préférez-vous vous déplacer au quotidien ?",
-          en: "Question 1: How do you prefer to travel on a daily basis?",
+          fr: "Comment préférez-vous vous déplacer au quotidien ?",
+          en: "How do you prefer to travel on a daily basis?",
         },
 
         answers: [
@@ -90,8 +89,8 @@ export default {
       },
       {
         text: {
-          fr: "Question 2 : Comment gérez-vous vos achats de vêtements ?",
-          en: "Question 2: How do you manage your clothing purchases?",
+          fr: "Comment gérez-vous vos achats de vêtements ?",
+          en: "How do you manage your clothing purchases?",
         },
         answers: [
           {
