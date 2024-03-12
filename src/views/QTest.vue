@@ -24,7 +24,8 @@
       <!-- Affichage des questions -->
       <fieldset v-if="currentQuestion !== null">
         <legend class="question">
-          {{ getQuestionIndicator }} - {{ currentQuestionText }}
+          {{ getQuestionIndicator }} - {{ currentQuestionText }} (Language:
+          {{ language }}, Current Question Index: {{ currentQuestion + 1 }})
         </legend>
         <ul class="propositions" role="radiogroup">
           <li v-for="(answer, aIndex) in currentQuestionAnswers" :key="aIndex">
@@ -76,6 +77,7 @@ export default {
           fr: "Question 1 : Comment préférez-vous vous déplacer au quotidien ?",
           en: "Question 1: How do you prefer to travel on a daily basis?",
         },
+
         answers: [
           { text: { fr: "En voiture", en: "By car" }, points: 1 },
           { text: { fr: "En vélo", en: "By bike" }, points: 2 },
@@ -132,9 +134,27 @@ export default {
     const getQuestionIndicator = computed(
       () => `Question ${currentQuestion.value + 1}`
     );
-    const currentQuestionText = computed(
-      () => questions[currentQuestion.value].text[language]
-    );
+    const currentQuestionText = computed(() => {
+      const question = questions[currentQuestion.value];
+
+      if (question) {
+        const textObject = question.text;
+        const languageText =
+          language.value === "fr" ? textObject.fr : textObject.en;
+
+        if (languageText) {
+          console.log("currentQuestionText:", languageText);
+          return languageText;
+        } else {
+          console.error("Error: Unable to retrieve language-specific text.");
+          return "Error: Unable to retrieve language-specific text.";
+        }
+      } else {
+        console.error("Error: Unable to retrieve question object.");
+        return "Error: Unable to retrieve question object.";
+      }
+    });
+
     const currentQuestionAnswers = computed(
       () => questions[currentQuestion.value].answers
     );
@@ -154,8 +174,9 @@ export default {
     };
 
     const toggleLanguage = () => {
-      // Changer la langue entre "fr" (français) et "en" (anglais), par exemple
       language.value = language.value === "fr" ? "en" : "fr";
+      console.log("Language toggled to:", language.value);
+      console.log("Text Object:", questions[currentQuestion.value].text);
     };
 
     return {
