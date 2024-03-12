@@ -1,10 +1,8 @@
 <template>
   <div>
     <Header :language="language" @toggleLanguage="toggleLanguage" />
-    <!-- En-tête -->
 
     <main class="questionnaire">
-      <!-- Barre de progression -->
       <div class="progress-bar">
         <div
           class="progress-bar__fill"
@@ -16,9 +14,6 @@
         </div>
       </div>
 
-      <!-- Bouton pour changer de langue -->
-
-      <!-- Affichage des questions -->
       <fieldset v-if="currentQuestion !== null">
         <legend class="question">
           {{ getQuestionIndicator }} - {{ currentQuestionText }}
@@ -35,10 +30,10 @@
               ><span class="answers">{{ answer.text[language] }}</span></label
             >
           </li>
-          <!-- Bouton pour passer à la question suivante -->
           <button
             class="button buttonQuestionnaire"
             @click="nextQuestion"
+            :style="{ opacity: selectedAnswers[currentQuestion] ? 1 : 0 }"
             :disabled="!selectedAnswers[currentQuestion]"
           >
             <span>{{ currentQuestionNextButtonText }}</span>
@@ -46,7 +41,6 @@
         </ul>
       </fieldset>
 
-      <!-- Affichage du résultat final -->
       <div v-else>
         <p>
           Fin du questionnaire. Votre score total est de
@@ -61,7 +55,7 @@
 <script>
 import Header from "@/components/Header.vue";
 import { ref, computed } from "vue";
-import questionsData from "@/assets/js/text.json"; // Assurez-vous d'ajuster le chemin d'accès correctement
+import questionsData from "@/assets/js/text.json";
 
 export default {
   components: {
@@ -72,15 +66,18 @@ export default {
     const currentQuestion = ref(0);
     const selectedAnswers = ref(Array.from({ length: 4 }, () => null));
     const totalScore = ref(0);
-    const language = ref("fr"); // Défaut : français
+    const language = ref("fr");
 
     const toggleLanguage = () => {
       language.value = language.value === "fr" ? "en" : "fr";
     };
 
-    const progressPercentage = computed(
-      () => ((currentQuestion.value + 1) / questions.value.length) * 100
-    );
+    const progressPercentage = computed(() => {
+      if (currentQuestion.value === null) {
+        return 100; // Si le questionnaire est terminé, la barre reste à 100%
+      }
+      return (currentQuestion.value / (questions.value.length - 1)) * 100;
+    });
     const getQuestionIndicator = computed(
       () => `Question ${currentQuestion.value + 1}`
     );
@@ -133,7 +130,20 @@ export default {
     });
 
     const getCategory = computed(() => {
-      // ... (votre logique de catégorie)
+      const score = totalScore.value;
+
+      if (score >= 61 && score <= 80) {
+        return 1;
+      } else if (score >= 41 && score <= 60) {
+        return 2;
+      } else if (score >= 21 && score <= 40) {
+        return 3;
+      } else if (score >= 1 && score <= 20) {
+        return 4;
+      } else {
+        console.error("Error: Invalid score range.");
+        return "Error: Invalid score range.";
+      }
     });
 
     const nextQuestion = () => {
