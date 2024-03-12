@@ -593,35 +593,72 @@
   },
   {
     "text": {
-      "fr": "Comment réagissez-vous face à la promotion de produits écologiques, même s'ils sont plus chers que les alternatives classiques ?",
-      "en": "How do you react to the promotion of ecological products, even if they are more expensive than conventional alternatives?"
+      "fr": "Que faites-vous de vos déchets alimentaires ?",
+      "en": "What do you do with your food waste?"
     },
     "answers": [
       {
         "text": {
-          "fr": "Je n'achète que les produits les moins chers, peu importe leur impact sur l'environnement.",
-          "en": "I only buy the cheapest products, regardless of their environmental impact."
+          "fr": "Je les mets dans mon compost ou le compost mis à disposition dans ma ville.",
+          "en": "I put it in my compost or the compost provided in my city."
         },
-        "points": 1
+        "points": 4
       },
       {
         "text": {
-          "fr": "Je considère parfois l'achat de produits écologiques, mais le prix est un facteur décisif.",
-          "en": "I sometimes consider buying ecological products, but price is a decisive factor."
+          "fr": "Je les jette à la poubelle.",
+          "en": "I throw it in the trash."
         },
         "points": 2
       },
       {
         "text": {
-          "fr": "Je suis prêt à payer un peu plus cher pour des produits écologiques.",
-          "en": "I am willing to pay a little more for ecological products."
+          "fr": "Je les donne à des fermes pour nourrir les animaux.",
+          "en": "I give it to farms to feed animals."
         },
         "points": 3
       },
       {
         "text": {
-          "fr": "Je privilégie toujours les produits écologiques, même s'ils sont plus chers.",
-          "en": "I always prioritize ecological products, even if they are more expensive."
+          "fr": "Je les laisse pourrir chez moi.",
+          "en": "I let it rot at home."
+        },
+        "points": 1
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Quelle est votre attitude envers la promotion de l'agriculture locale et la consommation de produits locaux ?",
+      "en": "What is your attitude towards promoting local agriculture and consuming local products?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Je ne prends pas en compte l'origine des produits dans mes choix d'achat.",
+          "en": "I do not take into account the origin of products in my purchasing decisions."
+        },
+        "points": 1
+      },
+      {
+        "text": {
+          "fr": "J'essaie parfois de privilégier les produits locaux, mais ce n'est pas une priorité.",
+          "en": "I sometimes try to prioritize local products, but it is not a priority."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "Je favorise activement les produits locaux pour soutenir l'économie locale et réduire l'empreinte carbone.",
+          "en": "I actively favor local products to support the local economy and reduce carbon footprint."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "J'adopte une approche exclusivement axée sur les produits locaux pour minimiser l'impact environnemental.",
+          "en": "I exclusively adopt an approach focused on local products to minimize environmental impact."
         },
         "points": 4
       }
@@ -630,37 +667,74 @@
   },
   {
     "text": {
-      "fr": "Comment choisissez-vous vos appareils électroménagers en termes d'efficacité énergétique ?",
-      "en": "How do you choose your household appliances in terms of energy efficiency?"
+      "fr": "Comment contribuez-vous ou envisagez-vous de contribuer aux associations environnementales ou de conservation ?",
+      "en": "How do you contribute or plan to contribute to environmental or conservation organizations?"
     },
     "answers": [
       {
         "text": {
-          "fr": "Je ne tiens pas compte de l'efficacité énergétique lors de l'achat d'appareils électroménagers.",
-          "en": "I don't consider energy efficiency when buying household appliances."
+          "fr": "Je ne suis pas impliqué(e) dans des associations environnementales.",
+          "en": "I am not involved in environmental organizations."
         },
         "points": 1
       },
       {
         "text": {
-          "fr": "Je considère parfois l'efficacité énergétique, mais d'autres facteurs sont plus importants.",
-          "en": "I sometimes consider energy efficiency, but other factors are more important."
+          "fr": "J'apprécie les actions des associations environnementales, mais je ne suis pas actuellement impliqué(e).",
+          "en": "I appreciate the actions of environmental organizations, but I am not currently involved."
         },
         "points": 2
       },
       {
         "text": {
-          "fr": "Je privilégie les appareils avec une efficacité énergétique élevée, même s'ils sont plus chers.",
-          "en": "I prioritize appliances with high energy efficiency, even if they are more expensive."
+          "fr": "J'ai déjà participé à des actions ponctuelles ou fait des dons à des associations environnementales.",
+          "en": "I have participated in occasional actions or donated to environmental organizations."
         },
         "points": 3
       },
       {
         "text": {
-          "fr": "Je choisis toujours des appareils avec la meilleure efficacité énergétique possible.",
-          "en": "I always choose appliances with the best possible energy efficiency."
+          "fr": "Je suis activement membre d'associations environnementales ou de conservation, contribuant régulièrement à des initiatives et des projets.",
+          "en": "I am actively a member of environmental or conservation organizations, regularly contributing to initiatives and projects."
         },
         "points": 4
+      }
+    ],
+    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+  },
+  {
+    "text": {
+      "fr": "Considérez-vous les problèmes environnementaux comme une priorité dans votre vie quotidienne ?",
+      "en": "Do you consider environmental issues a priority in your daily life?"
+    },
+    "answers": [
+      {
+        "text": {
+          "fr": "Ils ne sont pas une propriété, mais j'y pense de temps en temps.",
+          "en": "They are not a priority, but I think about them from time to time."
+        },
+        "points": 2
+      },
+      {
+        "text": {
+          "fr": "Absolument, ils sont une de mes priorités et je vis activement de manière durable.",
+          "en": "Absolutely, they are one of my priorities, and I actively live in a sustainable way."
+        },
+        "points": 4
+      },
+      {
+        "text": {
+          "fr": "Oui, je les considère comme une de mes priorités et je prends des mesures conscientes.",
+          "en": "Yes, I consider them one of my priorities, and I take conscious measures."
+        },
+        "points": 3
+      },
+      {
+        "text": {
+          "fr": "Non, ils ne sont pas une priorité dans ma vie quotidienne.",
+          "en": "No, they are not a priority in my daily life."
+        },
+        "points": 1
       }
     ],
     "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
