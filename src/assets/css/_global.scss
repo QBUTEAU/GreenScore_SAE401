@@ -10,6 +10,7 @@ $green : #006837;
 $yellow : #C1951F;
 
 $greenDarker : darken($green, 10%);
+$greenLighter : lighten($green, 10%);
 
 $blue : #47bbed;
 
@@ -25,6 +26,9 @@ $blue : #47bbed;
     }
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 // Mise en page
 *{

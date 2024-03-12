@@ -1,24 +1,24 @@
-// ---------- Home.vue ---------- //
-
-.home{
-    @include flexOriginel(column, center, center);
-    height: 100vh;
-    gap: 30px;
-}
-
-.button{
-    @extend %button;
-}
-
-
 // ---------- Presentation.vue ---------- //
 
-
-.title h1{
-    font-size: 45px;
-    color: $brown;
-    font-weight: 800;
-    margin: 10px;
+.hero-header{
+    height: 100vh;
+    width: 100vw;
+    @include flexOriginel(column, center, center);
+    img{
+        width: 40%;
+    }
+    p{
+        margin: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        color: $white
+    }
+    a{
+        margin-top: 50px;
+        svg{
+            height: 40px;
+        }
+    }
 }
   
 .presentation{
@@ -110,6 +110,10 @@
     }
 }
 
+.button{
+    @extend %button;
+}
+
 .presentation__button{
     text-align: center;
     margin-bottom: 15vh;
@@ -180,19 +184,16 @@ fieldset{
         height: 150px;
         cursor: pointer;
         &:hover + label{
-            background-color: $yellow;
-            color: $white;
+            border: 4px solid $greenLighter;
         }
         &:checked + label{
-            background-color: $brown;
-            border: 3px solid $yellow;
-            color: $white;
+            border: 4px solid $yellow;
         }
     }
     label{
         @include flexOriginel(row, center, center);
         background-color: $white;
-        border: 3px $white solid;
+        border: 4px $white solid;
         width: 100%;
         height: 100px;
         border-radius: 30px;
@@ -232,6 +233,18 @@ fieldset{
             padding: 10px 20px;
         }
     }  
+}
+
+@media screen and (max-width: 850px){
+    .hero-header{
+        img{
+            width: 75%;
+        }
+        p{
+            text-align: center;
+            font-size: 15px;
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
