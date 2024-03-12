@@ -2,14 +2,42 @@
     z-index: 10;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     background-color: $white;
-    padding: 10px 0;
+    padding: 7px 0;
     border-radius: 0 0 15px 15px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.31);
     img{
-        width: 200px;
+        width: 210px;
+    }
+    .language-button{
+        position: absolute;
+        width: max-content;
+        background-color: transparent;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+        border-radius: 20px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        svg{
+            fill: $black;
+        }
+        &:hover{
+            border: 2px solid $black;
+        }
+        .language-button__content{
+            @include flexOriginel(row, center, center);
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 4px 10px;
+            svg{
+                height: 18px;
+                width: 18px;
+            }
+        }
     }
 }
 
