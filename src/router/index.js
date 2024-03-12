@@ -18,6 +18,11 @@ const router = createRouter({
       name: "qtest",
       component: () => import("/src/views/QTest.vue"),
     },
+    {
+      path: "/wtest",
+      name: "wtest",
+      component: () => import("/src/views/Wtest.vue"),
+    },
   ],
 });
 
