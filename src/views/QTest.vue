@@ -6,8 +6,7 @@
       <div class="progress-bar">
         <div
           class="progress-bar__fill"
-          :style="{ width: progressPercentage + '%' }"
-        >
+          :style="{width: progressPercentage + '%'}">
           <span class="progress-bar__percentage"
             >{{ progressPercentage.toFixed(0) }}%</span
           >
@@ -44,7 +43,7 @@
       <div v-else>
         <p>
           Fin du questionnaire. Votre score total est de
-          {{ totalScore }} points. Vous êtes dans la catégorie
+          {{ (totalScore / 4) }}/20. Vous êtes dans la catégorie
           {{ getCategory }}.
         </p>
       </div>
