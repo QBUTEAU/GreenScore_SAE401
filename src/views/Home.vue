@@ -51,6 +51,8 @@ import Footer from "@/components/Footer.vue";
           invitation à la prise de conscience et à l'engagement vers un avenir et
           un monde plus vert !
         </p>
+        <img class="feuille1" src="@/assets/img/feuille1.svg" alt="planet" />
+        <img class="feuille2" src="@/assets/img/feuille2.svg" alt="planet" />
       </div>
     </div>
   </section>
@@ -80,11 +82,13 @@ import Footer from "@/components/Footer.vue";
           Rejoignez-nous dans cette aventure écologique et explorons ensemble
           notre potentiel de changement afin d'œuvrer pour un monde plus vert ! 🌳
         </p>
+         <img class="feuille1" src="@/assets/img/feuille1.svg" alt="planet" />
+        <img class="feuille2" src="@/assets/img/feuille2.svg" alt="planet" />
       </div>
-      </div>
-      <div class="ecologie__img">
-        <img class="emojis" src="@/assets/img/emojis.svg" alt="greenscore" />
-      </div>
+    </div>
+    <div class="ecologie__img">
+      <img class="emojis" src="@/assets/img/emojis.svg" alt="greenscore" />
+    </div>
   </section>
 
   <div class="presentation__button">

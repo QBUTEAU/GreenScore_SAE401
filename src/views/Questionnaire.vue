@@ -38,6 +38,7 @@ import Header from "@/components/Header.vue";
           />
           <label :for="'q' + currentQuestion + 'a' + aIndex">
             <span class="answers">{{ answer.text }}</span>
+            <img class="feuille1" src="@/assets/img/feuille2.svg" alt="planet" />
           </label>
         </li>
       </ul>
