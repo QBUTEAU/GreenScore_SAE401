@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <RouterLink to="/">
-      <img src="@/assets/img/header.png" alt="GreenScore" />
+      <img src="@/assets/img/header.svg" alt="GreenScore" />
     </RouterLink>
     <button class="language-button" @click="toggleLanguage">
         <div class="language-button__content">
@@ -19,7 +19,7 @@
                 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 
                 45.2-87.7 55.3-151.6H493.4z"/>
             </svg>
-            <span>EN</span>
+            <span id="language-span">EN</span>
         </div>
     </button>
   </header>
