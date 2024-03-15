@@ -43,7 +43,7 @@
       <div v-else>
         <p>
           Fin du questionnaire. Votre score total est de
-          {{ (totalScore / 4) }}/20. Vous êtes dans la catégorie
+          {{ Math.round(totalScore) / 4 }}/20. Vous êtes dans la catégorie
           {{ getCategory }}.
         </p>
       </div>
@@ -139,13 +139,13 @@ export default {
     const getCategory = computed(() => {
       const score = totalScore.value;
 
-      if (score >= 61 && score <= 80) {
+      if (score >= 67 && score <= 80) {
         return 1;
-      } else if (score >= 41 && score <= 60) {
+      } else if (score >= 49 && score <= 66) {
         return 2;
-      } else if (score >= 21 && score <= 40) {
+      } else if (score >= 35 && score <= 48) {
         return 3;
-      } else if (score >= 1 && score <= 20) {
+      } else if (score >= 20 && score <= 34) {
         return 4;
       } else {
         console.error("Error: Invalid score range.");
