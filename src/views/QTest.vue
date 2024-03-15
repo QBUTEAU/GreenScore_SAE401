@@ -3,13 +3,13 @@
     <Header :language="language" @toggleLanguage="toggleLanguage" />
 
     <main class="questionnaire">
-      <div class="progress-bar">
-        <div
-          class="progress-bar__fill"
+      <div class="progress-bar" v-if="currentQuestion !== null">
+        <div class="progress-bar__fill"
           :style="{width: progressPercentage + '%'}">
-          <span class="progress-bar__percentage"
-            >{{ progressPercentage.toFixed(0) }}%</span
-          >
+          <span class="progress-bar__percentage" 
+          :class="{ 'text-black': progressPercentage === 0 }">
+            {{ progressPercentage.toFixed(0) }}%
+          </span>
         </div>
       </div>
 
@@ -25,11 +25,13 @@
               :value="answer.points"
               v-model="selectedAnswers[currentQuestion]"
             />
-            <label :for="'q' + currentQuestion + 'a' + aIndex"
-              ><span class="answers">{{ answer.text[language] }}</span></label
-            >
+            <label :for="'q' + currentQuestion + 'a' + aIndex">
+              <span class="answers">{{ answer.text[language] }}</span>
+              <img class="feuille1" src="@/assets/img/feuille2.svg" alt="planet" />
+            </label>
           </li>
-          <button
+        </ul>
+        <button
             class="button buttonQuestionnaire"
             @click="nextQuestion"
             :style="{ opacity: selectedAnswers[currentQuestion] ? 1 : 0 }"
@@ -37,15 +39,13 @@
           >
             <span>{{ currentQuestionNextButtonText }}</span>
           </button>
-        </ul>
       </fieldset>
 
       <div v-else>
-        <p>
-          Fin du questionnaire. Votre score total est de
-          {{ Math.round(totalScore) / 4 }}/20. Vous êtes dans la catégorie
-          {{ getCategory }}.
-        </p>
+        <span class="note">{{ (totalScore / 4).toFixed(0) }}/20</span>
+        <h2>
+          {{ getCategory }}
+        </h2>
       </div>
     </main>
   </div>
@@ -78,6 +78,23 @@ export default {
             // Ajoutez ici le code pour changer la langue en anglais
         }
     };
+
+        const getCategory = computed(() => {
+      const score = totalScore.value;
+
+      if (score >= 67 && score <= 80) {
+        return "Excellent (1)";
+      } else if (score >= 49 && score <= 66) {
+        return "Bien (2)";
+      } else if (score >= 35 && score <= 48) {
+        return "Ok (3)";
+      } else if (score >= 20 && score <= 34) {
+        return "Insuffisant (4)";
+      } else {
+        console.error("Error: Invalid score range.");
+        return "Error: Invalid score range.";
+      }
+    });
 
     const progressPercentage = computed(() => {
       if (currentQuestion.value === null) {
@@ -136,23 +153,6 @@ export default {
       }
     });
 
-    const getCategory = computed(() => {
-      const score = totalScore.value;
-
-      if (score >= 67 && score <= 80) {
-        return 1;
-      } else if (score >= 49 && score <= 66) {
-        return 2;
-      } else if (score >= 35 && score <= 48) {
-        return 3;
-      } else if (score >= 20 && score <= 34) {
-        return 4;
-      } else {
-        console.error("Error: Invalid score range.");
-        return "Error: Invalid score range.";
-      }
-    });
-
     const nextQuestion = () => {
       totalScore.value += selectedAnswers.value[currentQuestion.value];
 
@@ -181,10 +181,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-/* Ajoutez votre CSS ici */
-.language-button {
-  margin-bottom: 10px;
-}
-</style>
