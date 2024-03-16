@@ -13,6 +13,9 @@
         font-weight: 700;
         color: $white
     }
+    .hero-header_button{
+        margin-top: 20px;
+    }
     a{
         margin-top: 50px;
         svg{
@@ -21,41 +24,13 @@
         }
     }
 }
-
-@keyframes arrowAnimation {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(20px);
-    }
-}
   
 .presentation{
     position: relative;
     @include flexOriginel(row, center, center);
-    gap: 10rem;
+    gap: 7rem;
     min-height: 100vh;
     width: 100vw;
-
-    .presentation__planet {
-        display: flex;
-        align-items: center;
-        height: 420px;
-        width: 420px;
-        background-color: $blue;
-        border-radius: 50%;
-        border: 3px solid $white;
-        overflow: hidden;
-    
-        img {
-            height: 105%;
-            animation: rotationPlanet 30s linear infinite;
-        }
-    }
 
     .presentation__texte{
         width: 42%;
@@ -71,24 +46,12 @@
             box-shadow: 0px 0px 22px 8px rgba(0, 0, 0, 0.31);
         }
     }
-}
 
- .feuille1,
- .feuille2 {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    
- }
-
- .feuille1 {
-     top: -20px;
-     left: -20px;
- }
-
- .feuille2 {
-     bottom: -20px;
-     right: -20px; 
+    .presentation__img{
+        img{
+            width: 400px;
+        }
+    }
 }
 
 
@@ -110,30 +73,47 @@
             line-height: 130%;
             box-shadow: 0px 0px 22px 8px rgba(0, 0, 0, 0.31);
         }
-        strong{
-            color: $brown;
+    }
+        .ecologie__planet {
+            display: flex;
+            align-items: center;
+            height: 420px;
+            width: 420px;
+            background-color: $blue;
+            border-radius: 50%;
+            border: 3px solid $white;
+            overflow: hidden;
+    
+            img {
+                height: 105%;
+                animation: rotationPlanet 30s linear infinite;
+            }
+        }
+}
+
+.levels{
+    @include flexOriginel(row, center, center);
+    min-height: 100vh;
+    width: 100vw;
+    gap: 9rem;
+    .levels__texte{
+        width: 45%;
+        .levels-texte__p{
+            position: relative;
+            font-size: 0.95em;
+            padding: 10px 30px;
+            border-radius: 10px;
+            background-color: $white;
+            color: $black;
+            font-weight: 500;
+            line-height: 130%;
+            box-shadow: 0px 0px 22px 8px rgba(0, 0, 0, 0.31);
         }
     }
-    .ecologie__img{
-        .emojis{
+        .emojis {
             width: 370px;
             animation: balancement 3s infinite;
         }
-    }
-}
-
-@keyframes balancement {
-    0% {
-        transform: translateY(30px);
-    }
-
-    50% {
-        transform: translateY(-30px);
-    }
-
-    100% {
-        transform: translateY(30px);
-    }
 }
 
 .button{
@@ -172,7 +152,7 @@
         .progress-bar__percentage {
             position: absolute;
             top: 50%;
-            left: 30px;
+            left: 25px;
             transform: translate(-50%, -50%);
             font-size: 15px;
             font-weight: bold;
@@ -276,14 +256,14 @@ fieldset{
 }
 
 @media screen and (max-width: 1100px){
-    .presentation, .ecologie{
+    .presentation, .ecologie, .levels{
         min-height: 70vh;
         padding: 0;
         margin: 50px 0;
-        .presentation__planet, .ecologie__img{
+        .presentation__img, .ecologie__planet, .levels__img{
             display: none;
         }
-        .presentation__texte, .ecologie__axes{
+        .presentation__texte, .ecologie__axes, .levels__texte{
             width: 80%;
             padding: 10px 20px;
         }

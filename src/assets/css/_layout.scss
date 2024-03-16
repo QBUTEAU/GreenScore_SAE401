@@ -2,22 +2,18 @@
     z-index: 10;
     position: fixed;
     top: 0;
+    @include flexOriginel(row, space-around, center);
     width: 100vw;
     text-align: center;
     background-color: $white;
     padding: 15px 0;
-    border-radius: 0 0 15px 15px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.31);
     img{
         width: 210px;
     }
     .language-button{
-        position: absolute;
         width: max-content;
         background-color: transparent;
-        top: 50%;
-        right: 50px;
-        transform: translateY(-50%);
         border-radius: 20px;
         border: 2px solid transparent;
         cursor: pointer;
@@ -51,9 +47,8 @@
     font-size: 14px;
     color: $brown;
     background-color: $white;
-    border-radius: 15px 15px 0 0;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.31);
-    width: 100%;
+    width: 100vw;
     .footer__copy, .footer__dev{
         font-weight: 700;
     }
@@ -83,19 +78,19 @@
 
 
 @media screen and (max-width: 850px){
-    .header{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .language-button{
-            position: relative;
-            transform: none;
-            right: 0;
-        }
-        img{
-            width: 220px;
-        }
-    }
+//     .header{
+//         display: flex;
+//         justify-content: space-around;
+//         align-items: center;
+//         .language-button{
+//             position: relative;
+//             transform: none;
+//             right: 0;
+//         }
+//         img{
+//             width: 220px;
+//         }
+// }
 
     .footer{
         flex-direction: column;

@@ -12,6 +12,13 @@ import Footer from "@/components/Footer.vue";
   <main class="hero-header">
     <img src="@/assets/img/logo_dark.svg" alt="hero" />
     <p>Explorez votre empreinte, changez votre impact !</p>
+    <div class="home-button hero-header_button">
+      <RouterLink to="/questionnaire">
+        <button class="button">
+          <span>Commencer le questionnaire</span>
+        </button>
+      </RouterLink>
+    </div>
     <a href="#presentation">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
         <!-- !Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License 
@@ -22,10 +29,6 @@ import Footer from "@/components/Footer.vue";
   </main>
 
   <section class="presentation" id="presentation">
-    <div class="presentation__planet">
-      <img src="@/assets/img/planisphere.svg" alt="planet" />
-      <img src="@/assets/img/planisphere.svg" alt="planet" />
-    </div>
     <div class="presentation__texte">
       <h2>Qu'est-ce que GreenScore ?</h2>
       <div class="presentation-texte__p">
@@ -55,9 +58,16 @@ import Footer from "@/components/Footer.vue";
         <img class="feuille2" src="@/assets/img/feuille2.svg" alt="planet" />
       </div>
     </div>
+    <div class="presentation__img">
+      <img src="@/assets/img/greenscore-blanc.svg" alt="planet" />
+    </div>
   </section>
 
   <section class="ecologie">
+    <div class="ecologie__planet">
+      <img src="@/assets/img/planisphere.svg" alt="planet" />
+      <img src="@/assets/img/planisphere.svg" alt="planet" />
+    </div>
     <div class="ecologie__axes">
       <h2>Comment mesure-t-on votre empreinte écologique ?</h2>
       <div class="ecologie-texte__p">
@@ -82,11 +92,43 @@ import Footer from "@/components/Footer.vue";
           Rejoignez-nous dans cette aventure écologique et explorons ensemble
           notre potentiel de changement afin d'œuvrer pour un monde plus vert ! 🌳
         </p>
-         <img class="feuille1" src="@/assets/img/feuille1.svg" alt="planet" />
+        <img class="feuille1" src="@/assets/img/feuille1.svg" alt="planet" />
         <img class="feuille2" src="@/assets/img/feuille2.svg" alt="planet" />
       </div>
     </div>
-    <div class="ecologie__img">
+  </section>
+
+  <section class="levels">
+    <div class="levels__texte">
+      <h2>Quels sont les niveaux de GreenScore ?</h2>
+      <div class="levels-texte__p">
+        <p>
+          <strong>Éco-Héros :</strong> Vous incarnez l'excellence en matière d'écologie,
+          avec des habitudes presque irréprochables et un impact environnemental remarquablement
+          positif. Continuez à explorer et à vous informer pour maintenir ce niveau d'excellence.
+        </p>
+        <p>
+          <strong>Défenseur Vert :</strong> Vous avez atteint un bon niveau d'engagement
+          écologique, avec des habitudes respectueuses de l'environnement. Continuez sur
+          cette voie pour renforcer vos actions et votre impact positif.
+        </p>
+        <p>
+          <strong>Acteur Vert :</strong> Vous commencez à prendre conscience de
+          l'importance de votre impact sur l'environnement et avez déjà commencé à
+          adopter certaines habitudes respectueuses. Continuez à explorer et à apprendre
+          pour approfondir votre engagement écologique.
+        </p>
+        <p>
+          <strong>Débutant Vert :</strong> Vous êtes aux prémices de votre engagement
+          pour un mode de vie plus respectueux de l'environnement. Continuez à persévérer
+          malgré les défis et à chercher des moyens d'améliorer progressivement vos habitudes
+          écologiques.
+        </p>
+        <img class="feuille1" src="@/assets/img/feuille1.svg" alt="planet" />
+        <img class="feuille2" src="@/assets/img/feuille2.svg" alt="planet" />
+      </div>
+    </div>
+    <div class="levels__img">
       <img class="emojis" src="@/assets/img/emojis.svg" alt="greenscore" />
     </div>
   </section>

@@ -79,21 +79,21 @@ export default {
         }
     };
 
-        const getCategory = computed(() => {
-      const score = totalScore.value;
+      const getCategory = computed(() => {
+        const score = totalScore.value;
 
-      if (score >= 67 && score <= 80) {
-        return "Excellent (1)";
-      } else if (score >= 49 && score <= 66) {
-        return "Bien (2)";
-      } else if (score >= 35 && score <= 48) {
-        return "Ok (3)";
-      } else if (score >= 20 && score <= 34) {
-        return "Insuffisant (4)";
-      } else {
-        console.error("Error: Invalid score range.");
-        return "Error: Invalid score range.";
-      }
+        if (score >= 67 && score <= 80) {
+          return "Excellent (1)";
+        } else if (score >= 49 && score <= 66) {
+          return "Bien (2)";
+        } else if (score >= 35 && score <= 48) {
+          return "Ok (3)";
+        } else if (score >= 20 && score <= 34) {
+          return "Insuffisant (4)";
+        } else {
+          console.error("Error: Invalid score range.");
+          return "Error: Invalid score range.";
+        }
     });
 
     const progressPercentage = computed(() => {

@@ -11,8 +11,10 @@ $yellow : #C1951F;
 
 $greenDarker : darken($green, 10%);
 $greenLighter : lighten($green, 10%);
+$greenLight : lighten($green, 20%);
 
 $blue : #47bbed;
+
 
 // Scrollbar
 ::-webkit-scrollbar{
@@ -85,6 +87,23 @@ body{
     }
 }
 
+.feuille1,
+.feuille2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.feuille1 {
+    top: -20px;
+    left: -20px;
+}
+
+.feuille2 {
+    bottom: -20px;
+    right: -20px;
+}
+
 h2 {
     font-size: 30px;
     margin-top: 0;
@@ -96,6 +115,10 @@ h2 {
 p{
     font-size: 14px;
     font-weight: 500;
+}
+
+strong {
+    color: $brown;
 }
 
 ul{
@@ -111,15 +134,6 @@ fieldset{
     margin: 0;
 }
 
-@keyframes rotationPlanet {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 @media screen and (max-width: 1100px){
     p{
