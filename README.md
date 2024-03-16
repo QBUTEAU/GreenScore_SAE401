@@ -1,6 +1,6 @@
 # GreenScore - SAE401
 
-Projet universitaire réalisé lors du semestre 4 du BUT Métiers du Multimédia et de l'Internet, parcours Développement web et Dispositifs interactifs (WS401D - Développer pour le web).
+Projet universitaire réalisé lors du semestre 4 du BUT Métiers du Multimédia et de l'Internet, parcours Développement Web et Dispositifs Interactifs (WS401D - Développer pour le web).
 
 ### 📜 Description :
 GreenScore est un questionnaire en ligne développé avec le framework Vue.js sur la thématique de l'écologie. Le but de celui-ci est de poser 20 questions à l'utilisateur, qui proposent 4 réponses chacune parmi lesquelles une seule doit être choisie. Chaque réponse correspond à un degré d'intérêt envers l'environnement, ce qui donnera à la fin du questionnaire un résultat correspondant au niveau d'implication de l'utilisateur auprès de l'écologie.<br>
