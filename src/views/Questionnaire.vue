@@ -53,7 +53,7 @@ import Header from "@/components/Header.vue";
 
     <div v-else>
       <p>
-        Fin du questionnaire. Votre score total est de {{ totalScore }} points.
+        Fin du questionnaire. Votre score total est de {{ totalScore / 4 }}/20 points.
         Vous êtes dans la catégorie {{ getCategory }}.
       </p>
     </div>
@@ -437,13 +437,13 @@ export default {
       return `Question ${this.currentQuestion + 1}`;
     },
     getCategory() {
-      if (this.totalScore >= 61 && this.totalScore <= 80) {
+      if (this.totalScore >= 67 && this.totalScore <= 80) {
         return 1;
-      } else if (this.totalScore >= 41 && this.totalScore <= 60) {
+      } else if (this.totalScore >= 49 && this.totalScore <= 66) {
         return 2;
-      } else if (this.totalScore >= 21 && this.totalScore <= 40) {
+      } else if (this.totalScore >= 35 && this.totalScore <= 48) {
         return 3;
-      } else if (this.totalScore >= 1 && this.totalScore <= 20) {
+      } else if (this.totalScore >= 20 && this.totalScore <= 34) {
         return 4;
       } else {
         return null;
