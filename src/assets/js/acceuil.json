@@ -1,0 +1,48 @@
+{
+  "heroHeader": {
+    "fr": "Explorez votre empreinte, changez votre impact !",
+    "en": "Explore your footprint, change your impact!"
+  },
+  "presentation": {
+    "fr": {
+      "title": "Qu'est-ce que GreenScore ?",
+      "text": [
+        "GreenScore est une application web basée sur un questionnaire en ligne engageant, sur la thématique de l'écologie. Inspiré des tests de pureté et de personnalité, GreenScore met en avant 20 questions sur des situations en lien avec le mode de vie écologique. En utilisant une approche ludique et instructive, nous avons pour but de sensibiliser chaque utilisateur à l'impact de leurs choix quotidiens sur l'environnement.",
+        "Chaque question est soigneusement élaborée de sorte à ce que chaque utilisateur s'identifie à la situation, le tout dans divers aspects de la vie quotidienne, tels que la consommation d'énergie, la gestion des déchets ou les modes de transport. L'objectif est de fournir une évaluation holistique de l'empreinte écologique de chacun.",
+        "GreenScore n'est pas simplement un questionnaire en ligne, c'est une exploration interactive de l'impact de chacun sur la planète, une invitation à la prise de conscience et à l'engagement vers un avenir et un monde plus vert !"
+      ]
+    },
+    "en": {
+      "title": "What is GreenScore?",
+      "text": [
+        "GreenScore is a web application based on an engaging online questionnaire, focusing on ecological themes. Inspired by purity and personality tests, GreenScore highlights 20 questions about situations related to ecological lifestyle. By using a playful and informative approach, our goal is to raise awareness among users about the impact of their daily choices on the environment.",
+        "Each question is carefully crafted so that every user can relate to the situation, covering various aspects of daily life such as energy consumption, waste management, or modes of transportation. The objective is to provide a holistic evaluation of each individual's ecological footprint.",
+        "GreenScore is not just an online questionnaire; it's an interactive exploration of each person's impact on the planet, an invitation to awareness and commitment towards a greener future and world!"
+      ]
+    }
+  },
+  "ecologie": {
+    "fr": {
+      "title": "Comment mesure-t-on votre empreinte écologique ?",
+      "text": [
+        "🌿 Explorez votre impact : Répondez à notre questionnaire interactif pour découvrir comment vos choix quotidiens influent sur l'environnement. De la manière dont vous consommez l'énergie à vos habitudes de consommation, ou par l'utilisation de produits pouvant impacter l'environnement.",
+        "🌍 Conscience écologique : Nous sommes là pour vous aider à prendre conscience de vos habitudes et à identifier des moyens pratiques d'adopter un mode de vie plus respectueux de l'environnement.",
+        "🌱 Des résultats personnalisés : À la fin du questionnaire, recevez des résultats personnalisés, des conseils écologiques et des suggestions pour amplifier votre impact positif.",
+        "Rejoignez-nous dans cette aventure écologique et explorons ensemble notre potentiel de changement afin d'œuvrer pour un monde plus vert ! 🌳"
+      ]
+    },
+    "en": {
+      "title": "How do we measure your ecological footprint?",
+      "text": [
+        "🌿 Explore your impact: Answer our interactive questionnaire to discover how your daily choices influence the environment. From how you consume energy to your consumption habits, or through the use of products that can impact the environment.",
+        "🌍 Ecological awareness: We are here to help you become aware of your habits and identify practical ways to adopt a more environmentally friendly lifestyle.",
+        "🌱 Personalized results: At the end of the questionnaire, receive personalized results, ecological advice, and suggestions to amplify your positive impact.",
+        "Join us in this ecological adventure and let's explore together our potential for change to work towards a greener world! 🌳"
+      ]
+    }
+  },
+  "buttonText": {
+    "fr": "Commencer le questionnaire",
+    "en": "Start the questionnaire"
+  }
+}
