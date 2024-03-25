@@ -17,7 +17,7 @@ const toggleLanguage = () => {
   }
 };
 
-import translationData from "@/assets/js/acceuil.json";
+import translationData from "@/assets/js/accueil.json";
 const $json = translationData;
 </script>
 
