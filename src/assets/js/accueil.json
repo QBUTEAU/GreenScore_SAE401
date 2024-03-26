@@ -49,19 +49,19 @@
     "fr": {
       "title": "Quels sont les niveaux de GreenScore ?",
       "text": [
-        "<strong>Éco-Héros :</strong> Vous incarnez l'excellence en matière d'écologie, avec des habitudes presque irréprochables et un impact environnemental remarquablement positif. Continuez à explorer et à vous informer pour maintenir ce niveau d'excellence.",
-        "<strong>Défenseur Vert :</strong> Vous avez atteint un bon niveau d'engagement écologique, avec des habitudes respectueuses de l'environnement. Continuez sur cette voie pour renforcer vos actions et votre impact positif.",
-        "<strong>Acteur Vert :</strong> Vous commencez à prendre conscience de l'importance de votre impact sur l'environnement et avez déjà commencé à adopter certaines habitudes respectueuses. Continuez à explorer et à apprendre pour approfondir votre engagement écologique.",
-        "<strong>Débutant Vert :</strong> Vous êtes aux prémices de votre engagement pour un mode de vie plus respectueux de l'environnement. Continuez à persévérer malgré les défis et à chercher des moyens d'améliorer progressivement vos habitudes écologiques."
+        "Éco-Héros : Vous incarnez l'excellence en matière d'écologie, avec des habitudes presque irréprochables et un impact environnemental remarquablement positif. Continuez à explorer et à vous informer pour maintenir ce niveau d'excellence.",
+        "Défenseur Vert : Vous avez atteint un bon niveau d'engagement écologique, avec des habitudes respectueuses de l'environnement. Continuez sur cette voie pour renforcer vos actions et votre impact positif.",
+        "Acteur Vert : Vous commencez à prendre conscience de l'importance de votre impact sur l'environnement et avez déjà commencé à adopter certaines habitudes respectueuses. Continuez à explorer et à apprendre pour approfondir votre engagement écologique.",
+        "Débutant Vert : Vous êtes aux prémices de votre engagement pour un mode de vie plus respectueux de l'environnement. Continuez à persévérer malgré les défis et à chercher des moyens d'améliorer progressivement vos habitudes écologiques."
       ]
     },
     "en": {
       "title": "What are the levels of GreenScore?",
       "text": [
-        "<strong>Eco-Hero:</strong> You embody excellence in ecology, with almost impeccable habits and a remarkably positive environmental impact. Keep exploring and educating yourself to maintain this level of excellence.",
-        "<strong>Green Defender:</strong> You have reached a good level of ecological engagement, with environmentally friendly habits. Continue on this path to strengthen your actions and your positive impact.",
-        "<strong>Green Actor:</strong> You are starting to realize the importance of your impact on the environment and have already begun to adopt some environmentally friendly habits. Continue to explore and learn to deepen your ecological commitment.",
-        "<strong>Green Beginner:</strong> You are at the beginning of your commitment to a more environmentally friendly lifestyle. Keep persevering despite the challenges and look for ways to gradually improve your ecological habits."
+        "Eco-Hero: You embody excellence in ecology, with almost impeccable habits and a remarkably positive environmental impact. Keep exploring and educating yourself to maintain this level of excellence.",
+        "Green Defender: You have reached a good level of ecological engagement, with environmentally friendly habits. Continue on this path to strengthen your actions and your positive impact.",
+        "Green Actor: You are starting to realize the importance of your impact on the environment and have already begun to adopt some environmentally friendly habits. Continue to explore and learn to deepen your ecological commitment.",
+        "Green Beginner: You are at the beginning of your commitment to a more environmentally friendly lifestyle. Keep persevering despite the challenges and look for ways to gradually improve your ecological habits."
       ]
     }
   }
