@@ -10,10 +10,8 @@ const toggleLanguage = () => {
   var languageSpan = document.getElementById("language-span");
   if (languageSpan.innerHTML === "EN") {
     languageSpan.innerHTML = "FR";
-    // Ajoutez ici le code pour changer la langue en français
   } else {
     languageSpan.innerHTML = "EN";
-    // Ajoutez ici le code pour changer la langue en anglais
   }
 };
 
