@@ -1,0 +1,72 @@
+{
+  "generalInformation": {
+    "fr": {
+      "title": "Mentions Légales",
+      "subtitle": "Informations générales",
+      "text1": "Le site GreenScore est la propriété des étudiants qui l'ont développé dans le cadre de la SAE 401 de la deuxième année du BUT Métiers du Multimédia et de l'Internet de l'IUT de Troyes, quel que soit sa présence sur les liens suivants :",
+      "text2": "https://mmi22c03.sae401.ovh - https://mmi22g05.sae401.ovh - https://mmi22g07.sae401.ovh - https://mmi22g11.sae401.ovh      ",
+      "text3": "Siège social : IUT de Troyes - 9 Rue Québec - 10430 Rosières-prés-Troyes - FRANCE"
+    },
+    "en": {
+      "title": "Legal Notice",
+      "subtitle": "General Information",
+      "text1": "The GreenScore site is the property of the students who developed it as part of the SAE 401 of the second year of the BUT Multimedia and Internet Professions of the IUT of Troyes, regardless of its presence on the following links:",
+      "text2": "https://mmi22c03.sae401.ovh - https://mmi22g05.sae401.ovh - https://mmi22g07.sae401.ovh - https://mmi22g11.sae401.ovh",
+      "text3": "Head office : IUT de Troyes - 9 Rue Québec - 10430 Rosières-prés-Troyes - FRANCE"
+    }
+  },
+  "credits": {
+    "fr": {
+      "title": "Crédits",
+      "text": "Quentin Buteau et Jathushan Selvarajah pour le développement et l'intégration, Axel Tribondeau et Okesse Smith pour l'infographie, le rédactionnel et les traductions, fontawesome.com pour quelques icônes et l'ensembles des membres pour la rédaction des questions et des réponses.      "
+    },
+    "en": {
+      "title": "Credits",
+      "text": "Quentin Buteau and Jathushan Selvarajah for development and integration, Axel Tribondeau and Okesse Smith for infographics, editorial and translations, fontawesome.com for some icons and all members for questions and answers."
+    }
+  },
+  "intellectualProperty": {
+    "fr": {
+      "title": "Propriétés intellectuelles",
+      "text1": "L'ensemble des éléments figurant sur le site GreenScore, notamment les textes, images, graphismes, logos, icônes, ainsi que leur mise en forme sont la propriété exclusive des développeurs et rédacteurs du site.",
+      "text2": "Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l'accord exprès par écrit de chaque membre du groupe. Cette représentation ou reproduction, par quelque procédé que ce soit, constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle."
+    },
+    "en": {
+      "title": "Intellectual Property",
+      "text1": "All elements appearing on the GreenScore site, including texts, images, graphics, logos, icons, and their formatting are the exclusive property of the developers and editors of the site.",
+      "text2": "Any reproduction, distribution, modification, adaptation, retransmission or publication, even partial, of these various elements is strictly prohibited without the express written consent of each member of the group. This representation or reproduction, by any means whatsoever, constitutes an infringement punishable by Articles L.335-2 of the French Intellectual Property Code."
+    }
+  },
+  "privacyPolicy": {
+    "fr": {
+      "title": "Politique de confidentialité et données personnelles",
+      "text1": "GreenScore se réserve le droit de mettre à jour ou de modifier sa politique de confidentialité à tout moment et sans préavis. Nous vous encourageons à consulter régulièrement cette page pour rester informé des éventuelles modifications.",
+      "text2": "GreenScore s'engage à respecter votre vie privée et à protéger toute information que vous pourriez fournir tout en utilisant notre service en ligne. Le site ne collecte aucune donnée personnelle identifiable lorsque vous utilisez notre service en ligne. Aucune information personnelle, telle que votre nom, adresse e-mail ou numéro de téléphone, n'est demandée ni enregistrée. Le site n'utilise également pas de cookies pour suivre votre activité en ligne."
+    },
+    "en": {
+      "title": "Privacy Policy and Personal Data",
+      "text1": "GreenScore reserves the right to update or modify its Privacy Policy at any time and without notice. We encourage you to visit this page regularly to stay informed of any changes.",
+      "text2": "GreenScore is committed to respecting your privacy and protecting any information you may provide while using our online service. The site does not collect any personally identifiable data when you use our online service. No personal information, such as your name, email address or phone number, is requested or stored. The site also does not use cookies to track your online activity."
+    }
+  },
+  "responsibility": {
+    "fr": {
+      "title": "Responsabilité",
+      "text": "L'utilisation du site GreenScore sur l'ensemble des liens auquel le site est présent et sous la seule et entière responsabilité de l'utilisateur. L'ensemble  ne pourra être tenu pour responsable des dommages, qu'ils soient directs ou indirects, tels que la perte de données et le préjudice matériel."
+    },
+    "en": {
+      "title": "Responsibility",
+      "text": "The use of the GreenScore site on all links to which the site is present and under the sole responsibility of the user. The whole cannot be held responsible for damages, whether direct or indirect, such as loss of data and material damage."
+    }
+  },
+  "siteUpdates": {
+    "fr": {
+      "title": "Mises à jour du site",
+      "text": "Les développeurs de GreenScore se réservent le droit de modifier ou de supprimer tous les éléments présents sur le site et d'en ajouter. Il est de la responsabilité des utilisateurs de consulter le site régulièrement."
+    },
+    "en": {
+      "title": "Site Updates",
+      "text": "GreenScore’s developers reserve the right to modify or delete all the elements present on the site and to add them. It is the responsibility of the users to consult the site regularly."
+    }
+  }
+}
