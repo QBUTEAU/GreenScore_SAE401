@@ -4,8 +4,14 @@
 
     <main class="questionnaire">
       <div class="progress-bar" v-if="currentQuestion !== null">
-        <div class="progress-bar__fill" :style="{ width: progressPercentage + '%' }">
-          <span class="progress-bar__percentage" :class="{ 'text-black': progressPercentage === 0 }">
+        <div
+          class="progress-bar__fill"
+          :style="{ width: progressPercentage + '%' }"
+        >
+          <span
+            class="progress-bar__percentage"
+            :class="{ 'text-black': progressPercentage === 0 }"
+          >
             {{ progressPercentage.toFixed(0) }}%
           </span>
         </div>
@@ -17,22 +23,54 @@
         </legend>
         <ul class="propositions" role="radiogroup">
           <li v-for="(answer, aIndex) in currentQuestionAnswers" :key="aIndex">
-            <input type="radio" :name="'q' + currentQuestion" :value="answer.points"
-              v-model="selectedAnswers[currentQuestion]" />
+            <input
+              type="radio"
+              :name="'q' + currentQuestion"
+              :value="answer.points"
+              v-model="selectedAnswers[currentQuestion]"
+            />
             <label :for="'q' + currentQuestion + 'a' + aIndex">
               <span class="answers">{{ answer.text[language] }}</span>
-              <img class="feuille1" src="@/assets/img/feuille2.svg" alt="planet" />
+              <img
+                class="feuille1"
+                src="@/assets/img/feuille2.svg"
+                alt="planet"
+              />
             </label>
           </li>
         </ul>
-        <button class="button buttonQuestionnaire" @click="nextQuestion"
-          :style="{ opacity: selectedAnswers[currentQuestion] ? 1 : 0 }" :disabled="!selectedAnswers[currentQuestion]">
+        <button
+          class="button buttonQuestionnaire"
+          @click="nextQuestion"
+          :style="{ opacity: selectedAnswers[currentQuestion] ? 1 : 0 }"
+          :disabled="!selectedAnswers[currentQuestion]"
+        >
           <span>{{ currentQuestionNextButtonText }}</span>
         </button>
       </fieldset>
 
-      <div style="font-size:25px; display: flex; flex-direction: column; justify-content: center;align-items: center;" v-else>
-        <h3 style="font-size:30px; color: white; background-color: black;width: max-content; padding: 8px 20px; border-radius: 20px; ">{{(totalScore / 4).toFixed(0) }}/20</h3>
+      <div
+        style="
+          font-size: 25px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+        v-else
+      >
+        <h3
+          style="
+            font-size: 30px;
+            color: white;
+            background-color: black;
+            width: max-content;
+            padding: 8px 20px;
+            border-radius: 20px;
+          "
+        >
+          {{ (totalScore / 4).toFixed(0) }}/20
+        </h3>
         <h3>Vous obtenez le titre de</h3>
         <span class="resultat">{{ getCategory }}</span>
       </div>
