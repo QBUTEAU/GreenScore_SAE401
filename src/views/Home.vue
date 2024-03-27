@@ -66,23 +66,14 @@ const $json = translationData;
     <div class="ecologie__axes">
       <h2>{{ $json.ecologie[language].title }}</h2>
       <div class="ecologie-texte__p">
-<<<<<<< Updated upstream
-        <template
-          v-for="(category, index) in $json.ecologie[language].categorie"
-          :key="index"
-        >
+        <template v-for="(category, index) in $json.ecologie[language].categorie" :key="index">
           <p>
             <strong>{{ category }}</strong>
             {{ $json.ecologie[language].text[index] }}
           </p>
         </template>
-=======
-        <p v-for="paragraph in $json.ecologie[language].text" :key="paragraph">
-          {{ paragraph }}
-        </p>
         <img class="feuille1" src="@/assets/img/feuille1.svg" alt="planet" />
         <img class="feuille2" src="@/assets/img/feuille2.svg" alt="planet" />
->>>>>>> Stashed changes
       </div>
     </div>
   </section>
@@ -91,10 +82,7 @@ const $json = translationData;
     <div class="levels__texte">
       <h2>{{ $json.levels[language].title }}</h2>
       <div class="levels-texte__p">
-        <template
-          v-for="(category, index) in $json.levels[language].categories"
-          :key="index"
-        >
+        <template v-for="(category, index) in $json.levels[language].categories" :key="index">
           <p>
             <strong>{{ category }}</strong>
             {{ $json.levels[language].text[index] }}
