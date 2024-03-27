@@ -1,20 +1,26 @@
-<script setup></script>
-
 <template>
   <footer class="footer">
     <p class="footer__copy">&copy; 2024 GreenScore - Tous droits réservés</p>
     <ul class="footer__liens">
       <li>
-        <RouterLink to="/"> Accueil </RouterLink>
+        <router-link to="/" @click="scrollToTop">Accueil</router-link>
       </li>
       <li>
-        <RouterLink to="/questionnaire"> Questionnaire </RouterLink>
+        <router-link to="/questionnaire" @click="scrollToTop">Questionnaire</router-link>
       </li>
       <li>
-        <RouterLink to="/notice"> Mentions légales </RouterLink>
+        <router-link to="/notice" @click="scrollToTop">Mentions légales</router-link>
       </li>
     </ul>
   </footer>
 </template>
 
-<style scoped></style>
+<script>
+export default {
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0); // Défilement jusqu'au début de la page
+    }
+  }
+}
+</script>

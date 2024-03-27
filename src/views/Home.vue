@@ -71,7 +71,7 @@ const $json = translationData;
     <div class="ecologie__axes">
       <h2>{{ $json.ecologie[language].title }}</h2>
       <div class="ecologie-texte__p">
-        <template
+        <div
           v-for="(category, index) in $json.ecologie[language].categorie"
           :key="index"
         >
@@ -79,7 +79,7 @@ const $json = translationData;
             <strong>{{ category }}</strong>
             {{ $json.ecologie[language].text[index] }}
           </p>
-        </template>
+        </div>
         <img class="feuille1" src="@/assets/img/feuille1.svg" alt="planet" />
         <img class="feuille2" src="@/assets/img/feuille2.svg" alt="planet" />
       </div>

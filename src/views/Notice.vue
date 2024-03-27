@@ -20,6 +20,7 @@ const $json = translationData;
 </script>
 
 <template>
+
   <Header :language="language" @toggleLanguage="toggleLanguage" />
 
   <main class="mentions">
