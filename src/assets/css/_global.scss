@@ -115,6 +115,7 @@ h2 {
 p{
     font-size: 14px;
     font-weight: 500;
+    margin: 12px;
 }
 
 strong {
@@ -141,5 +142,9 @@ fieldset{
     }
     h2{
         font-size: 20px!important;
+    }
+    .feuille1,.feuille2{
+        height: 40px;
+        width: 40px;
     }
 }

@@ -37,7 +37,7 @@
         .presentation-texte__p{
             position: relative;
             font-size: 14px;
-            padding: 10px 30px;
+            padding: 20px 30px;
             border-radius: 10px;
             background-color: $white;
             color: $black;
@@ -65,7 +65,7 @@
         .ecologie-texte__p{
             position: relative;
             font-size: 0.95em;
-            padding: 10px 30px;
+            padding: 20px 30px;
             border-radius: 10px;
             background-color: $white;
             color: $black;
@@ -101,7 +101,7 @@
         .levels-texte__p{
             position: relative;
             font-size: 0.95em;
-            padding: 10px 30px;
+            padding: 20px 30px;
             border-radius: 10px;
             background-color: $white;
             color: $black;
@@ -136,7 +136,7 @@
 }
 
 .progress-bar {
-    width: 60%;
+    width: 70%;
     height: 30px;
     background-color: #ccc;
     position: relative;
@@ -152,7 +152,7 @@
         .progress-bar__percentage {
             position: absolute;
             top: 50%;
-            left: 25px;
+            left: 30px;
             transform: translate(-50%, -50%);
             font-size: 15px;
             font-weight: bold;
@@ -256,6 +256,45 @@ h3{
 
 }
 
+// ---------- MENTIONS LEGALES ---------- //
+
+.mentions{
+    margin: 100px 0;
+    @include flexOriginel(column, center, center);
+    width: 100vw;
+    gap: 20px;
+    color: $white;
+    h2{
+        font-size: 35px;
+        font-weight: 800;
+    }
+    h3{
+        text-transform: uppercase;
+        text-align: center
+    }
+    .mentions__bloc{
+        @include flexOriginel(column, center, center);
+        width: 60%;
+        > .mentions-bloc__texte{
+            position: relative;
+            padding: 20px;
+            background-color: $white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 22px 8px rgba(0, 0, 0, 0.31);
+            color: $black;
+            font-weight: 500;
+            line-height: 130%;
+            width: 100%;
+            li{
+                font-size: 14px;
+                font-weight: 500;
+                margin: 12px;
+                list-style: circle;
+            }
+        }
+    }
+}
+
 // ---------- Medias Queries ---------- //
 
 @media screen and (min-width:1100px) and (max-width: 1270px){
@@ -276,7 +315,19 @@ h3{
             width: 80%;
             padding: 10px 20px;
         }
-    }  
+    }
+
+    .mentions{
+        h2{
+            font-size: 30px!important;
+        }
+        h3{
+            font-size: 18px;
+        }
+        .mentions__bloc{
+            width: 80%;
+        }
+    }
 }
 
 @media screen and (max-width: 850px){
