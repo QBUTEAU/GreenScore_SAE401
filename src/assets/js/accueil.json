@@ -61,10 +61,10 @@
     "fr": {
       "title": "Quels sont les niveaux de GreenScore ?",
       "categories": [
-        "Éco-Héros : ",
+        "Éco Leader : ",
         "Défenseur Vert : ",
         "Acteur Vert : ",
-        "Débutant Vert : "
+        "Novice Vert : "
       ],
       "text": [
         "Vous incarnez l'excellence en matière d'écologie, avec des habitudes presque irréprochables et un impact environnemental remarquablement positif. Continuez à explorer et à vous informer pour maintenir ce niveau d'excellence.",
@@ -76,7 +76,7 @@
     "en": {
       "title": "What are the levels of GreenScore ?",
       "categories": [
-        "Eco-Hero : ",
+        "Eco Leader : ",
         "Green Defender : ",
         "Green Actor : ",
         "Green Beginner : "

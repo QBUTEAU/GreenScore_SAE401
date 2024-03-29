@@ -110,13 +110,13 @@ export default {
       const score = totalScore.value;
 
       if (score >= 67 && score <= 80) {
-        return "Eco-Héros";
+        return "Eco Leader";
       } else if (score >= 49 && score <= 66) {
         return "Défenseur Vert";
       } else if (score >= 35 && score <= 48) {
         return "Acteur Vert";
       } else if (score >= 20 && score <= 34) {
-        return "Débutant Vert";
+        return "Novice Vert";
       } else {
         console.error("Error: Invalid score range.");
         return "Error: Invalid score range.";
