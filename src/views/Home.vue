@@ -17,6 +17,8 @@ const toggleLanguage = () => {
 
 import translationData from "@/assets/js/accueil.json";
 const $json = translationData;
+
+
 </script>
 
 <template>
@@ -32,26 +34,19 @@ const $json = translationData;
         </button>
       </RouterLink>
     </div>
-    <a href="#presentation">
+    <!-- <a href="#presentation">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-        <!-- !Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License 
-          - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-        <path
-          fill="#f1f1f1"
-          d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
-        />
+        <path fill="#f1f1f1"
+          d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
       </svg>
-    </a>
+    </a> -->
   </main>
 
   <section class="presentation" id="presentation">
     <div class="presentation__texte">
       <h2>{{ $json.presentation[language].title }}</h2>
       <div class="presentation-texte__p">
-        <p
-          v-for="paragraph in $json.presentation[language].text"
-          :key="paragraph"
-        >
+        <p v-for="paragraph in $json.presentation[language].text" :key="paragraph">
           {{ paragraph }}
         </p>
         <img class="feuille1" src="@/assets/img/feuille1.svg" alt="planet" />
@@ -71,10 +66,7 @@ const $json = translationData;
     <div class="ecologie__axes">
       <h2>{{ $json.ecologie[language].title }}</h2>
       <div class="ecologie-texte__p">
-        <div
-          v-for="(category, index) in $json.ecologie[language].categorie"
-          :key="index"
-        >
+        <div v-for="(category, index) in $json.ecologie[language].categorie" :key="index">
           <p>
             <strong>{{ category }}</strong>
             {{ $json.ecologie[language].text[index] }}
@@ -90,10 +82,7 @@ const $json = translationData;
     <div class="levels__texte">
       <h2>{{ $json.levels[language].title }}</h2>
       <div class="levels-texte__p">
-        <template
-          v-for="(category, index) in $json.levels[language].categories"
-          :key="index"
-        >
+        <template v-for="(category, index) in $json.levels[language].categories" :key="index">
           <p>
             <strong>{{ category }}</strong>
             {{ $json.levels[language].text[index] }}
@@ -109,7 +98,7 @@ const $json = translationData;
   </section>
 
   <div class="presentation__button">
-    <RouterLink to="/questionnaire">
+    <RouterLink to="/questionnaire" @click="scrollToTop">
       <button class="button">
         <span>{{ $json.buttonText[language] }}</span>
       </button>

@@ -34,9 +34,11 @@
         "points": 4
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
-
   {
     "text": {
       "fr": "Comment gérez-vous vos achats de vêtements ?",
@@ -72,7 +74,10 @@
         "points": 4
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -109,7 +114,10 @@
         "points": 4
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -146,7 +154,10 @@
         "points": 2
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -183,7 +194,10 @@
         "points": 3
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -220,7 +234,10 @@
         "points": 4
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -257,7 +274,10 @@
         "points": 3
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -294,7 +314,10 @@
         "points": 1
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -331,7 +354,10 @@
         "points": 1
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -368,7 +394,10 @@
         "points": 1
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -405,7 +434,10 @@
         "points": 2
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -442,7 +474,10 @@
         "points": 1
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -479,7 +514,10 @@
         "points": 2
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -516,7 +554,10 @@
         "points": 1
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -553,7 +594,10 @@
         "points": 2
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -590,7 +634,10 @@
         "points": 4
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -627,7 +674,10 @@
         "points": 1
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -664,7 +714,10 @@
         "points": 4
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -701,7 +754,10 @@
         "points": 4
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Question Suivante",
+      "en": "Next Question"
+    }
   },
   {
     "text": {
@@ -738,6 +794,9 @@
         "points": 1
       }
     ],
-    "nextButtonText": { "fr": "Question Suivante", "en": "Next Question" }
+    "nextButtonText": {
+      "fr": "Voir les résultats",
+      "en": "See results"
+    }
   }
 ]

@@ -1,4 +1,4 @@
-.header{
+.header {
     z-index: 10;
     position: fixed;
     top: 0;
@@ -7,29 +7,35 @@
     text-align: center;
     background-color: $white;
     padding: 15px 0;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.31);
-    img{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.31);
+
+    img {
         width: 210px;
     }
-    .language-button{
+
+    .language-button {
         width: max-content;
         background-color: transparent;
         border-radius: 20px;
         border: 2px solid transparent;
         cursor: pointer;
-        svg{
+
+        svg {
             fill: $black;
         }
-        &:hover{
+
+        &:hover {
             border: 2px solid $black;
         }
-        .language-button__content{
+
+        .language-button__content {
             @include flexOriginel(row, center, center);
             gap: 10px;
             font-size: 16px;
             font-weight: 600;
             padding: 4px 10px;
-            svg{
+
+            svg {
                 height: 18px;
                 width: 18px;
             }
@@ -39,7 +45,7 @@
 
 // --------------------------------------
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -47,21 +53,25 @@
     font-size: 14px;
     color: $brown;
     background-color: $white;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.31);
     width: 100vw;
-    .footer__copy{
+
+    .footer__copy {
         font-weight: 700;
     }
-    .footer__liens{
-        li{
+
+    .footer__liens {
+        li {
             display: inline-flex;
             margin: 0 10px;
-            a{
+
+            a {
                 position: relative;
                 color: $brown;
                 text-decoration: none;
                 text-transform: uppercase;
                 font-weight: 700;
+
                 &:after {
                     content: '';
                     position: absolute;
@@ -73,59 +83,65 @@
                     visibility: hidden;
                     transform: scaleX(0);
                     transition: all 0.2s ease-in-out;
-                    }
-                    &:hover:after {
-                        visibility: visible;
-                        transform: scaleX(1);
-                    }
+                }
+
+                &:hover:after {
+                    visibility: visible;
+                    transform: scaleX(1);
                 }
             }
         }
     }
+}
 
 
-@media screen and (max-width: 850px){
-//     .header{
-//         display: flex;
-//         justify-content: space-around;
-//         align-items: center;
-//         .language-button{
-//             position: relative;
-//             transform: none;
-//             right: 0;
-//         }
-//         img{
-//             width: 220px;
-//         }
-// }
+@media screen and (max-width: 850px) {
+    //     .header{
+    //         display: flex;
+    //         justify-content: space-around;
+    //         align-items: center;
+    //         .language-button{
+    //             position: relative;
+    //             transform: none;
+    //             right: 0;
+    //         }
+    //         img{
+    //             width: 220px;
+    //         }
+    // }
 
-    .footer{
+    .footer {
         flex-direction: column;
-        .footer__copy{
+
+        .footer__copy {
             width: 75%;
             text-align: center;
         }
-        .footer__dev{
+
+        .footer__dev {
             @include flexOriginel(row, center, center);
             flex-wrap: wrap;
             gap: 5px;
         }
-        p{
+
+        p {
             margin: 6px;
         }
     }
 }
 
-@media screen and (max-width: 500px){
-    .header{
-        .language-button__content{
-            font-size: 15px!important;
-            svg{
+@media screen and (max-width: 500px) {
+    .header {
+        .language-button__content {
+            font-size: 15px !important;
+
+            svg {
                 height: 15px;
                 width: 15px;
             }
         }
-        img{
+
+        img {
             width: 180px;
         }
     }

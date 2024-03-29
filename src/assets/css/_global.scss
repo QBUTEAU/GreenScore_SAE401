@@ -17,13 +17,15 @@ $blue : #47bbed;
 
 
 // Scrollbar
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
     background-color: $white;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: $green;
-    &:hover{
+
+    &:hover {
         background-color: darken($green, 5%);
     }
 }
@@ -33,26 +35,26 @@ $blue : #47bbed;
 // }
 
 // Mise en page
-*{
+* {
     font-family: $font;
 }
 
-body{
+body {
     margin: 0;
     background-color: $greenDarker;
     overflow-x: hidden;
 }
 
-.logo{
-    height:350px;
+.logo {
+    height: 350px;
 }
 
 // Placeholders
-%button{
+%button {
     color: $white;
     background-color: $green;
     border: none;
-    padding: 7px 20px;
+    padding: 8px 25px;
     border-radius: 10px;
     font-family: $font;
     font-size: 15px;
@@ -60,11 +62,12 @@ body{
     text-transform: uppercase;
     cursor: pointer;
 
-    span{
+    span {
         display: inline-block;
         position: relative;
         transition: 0.25s;
-        &:after{
+
+        &:after {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -78,9 +81,10 @@ body{
         }
     }
 
-    &:hover span{
+    &:hover span {
         padding-right: 25px;
-        &:after{
+
+        &:after {
             opacity: 1;
             right: 0;
         }
@@ -112,7 +116,7 @@ h2 {
     text-align: center;
 }
 
-p{
+p {
     font-size: 14px;
     font-weight: 500;
     margin: 12px;
@@ -122,28 +126,32 @@ strong {
     color: $brown;
 }
 
-ul{
+ul {
     padding: 0;
 }
-li{
+
+li {
     list-style: none;
 }
 
-fieldset{
+fieldset {
     border: none;
     padding: 0;
     margin: 0;
 }
 
 
-@media screen and (max-width: 1100px){
-    p{
+@media screen and (max-width: 1100px) {
+    p {
         font-size: 12px;
     }
-    h2{
-        font-size: 20px!important;
+
+    h2 {
+        font-size: 20px !important;
     }
-    .feuille1,.feuille2{
+
+    .feuille1,
+    .feuille2 {
         height: 40px;
         width: 40px;
     }
