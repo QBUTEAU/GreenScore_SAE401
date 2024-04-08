@@ -256,25 +256,65 @@ fieldset {
     margin-top: 20px;
 }
 
-// ---------- Questionnaire : RESULTAT ---------- //
+// ---------- RESULTS ---------- //
 
-.resultat {
-    background-color: $white;
-    padding: 10px 40px;
-    font-size: 50px;
-    font-weight: 700;
-    border-radius: 20px;
-    color: $green;
-    box-shadow: 0px 0px 22px 8px rgba(0, 0, 0, 0.31);
+.results {
+    @include flexOriginel(row, center, center);
+    min-height: calc(100vh - 120px);
+    margin-top: 60px;
+    gap: 120px;
+
+    .results__level {
+        @include flexOriginel(column, center, center);
+        color: $white;
+
+        p {
+            font-size: 15px;
+        }
+
+        .results-level__span {
+            background-color: $white;
+            padding: 8px 30px;
+            font-size: 40px;
+            font-weight: 700;
+            border-radius: 20px;
+            color: $green;
+            box-shadow: 0px 0px 22px 8px rgba(0, 0, 0, 0.31);
+        }
+    }
+
+    .results__advices {
+        @include flexOriginel(column, center, center);
+        gap: 20px;
+        width: 40%;
+
+        .results-advices__texte {
+            position: relative;
+            background-color: $white;
+            padding: 15px 25px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 22px 8px rgba(0, 0, 0, 0.31);
+
+            p {
+                font-size: 13px !important;
+                margin: 5px !important;
+            }
+
+            ul li {
+                list-style: disc;
+                font-weight: 500;
+                font-size: 13px !important;
+                margin: 7px 0 7px 20px;
+            }
+        }
+
+        .results__button {
+            @include flexOriginel(row, center, center);
+            gap: 20px;
+        }
+    }
 }
 
-h3 {
-    font-size: 23px;
-    font-weight: 700;
-    color: $white;
-    margin: 10px;
-
-}
 
 // ---------- MENTIONS LEGALES ---------- //
 
@@ -363,6 +403,25 @@ h3 {
 
         .mentions__bloc {
             width: 80%;
+        }
+    }
+
+    .results {
+        @include flexOriginel(column, center, center);
+        height: auto;
+        margin: 100px 0;
+
+        .results-level__span {
+            font-size: 30px !important;
+        }
+
+        .results__advices {
+            width: 80%;
+
+            .results__button {
+                flex-direction: none;
+                flex-wrap: wrap;
+            }
         }
     }
 }

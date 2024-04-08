@@ -140,10 +140,23 @@ fieldset {
     margin: 0;
 }
 
+$classes: (
+    greenDarker: #004e00,
+    green : #006900,
+    greenLighter: #007300,
+    greenLight: #008700
+);
+
+@each $class, $color in $classes {
+    .#{$class} {
+        color: $color !important;
+    }
+}
+
 
 @media screen and (max-width: 1100px) {
     p {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
     h2 {

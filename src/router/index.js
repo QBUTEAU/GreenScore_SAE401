@@ -17,6 +17,26 @@ const router = createRouter({
       path: "/notice",
       name: "notice",
       component: () => import("/src/views/Notice.vue"),
+    },
+    {
+      path: '/test1',
+      name: 'test1',
+      component: () => import('/src/views/LeaderTest.vue')
+    },
+    {
+      path: '/test2',
+      name: 'test2',
+      component: () => import('/src/views/DefenseTest.vue')
+    },
+    {
+      path: '/test3',
+      name: 'test3',
+      component: () => import('/src/views/ActeurTest.vue')
+    },
+    {
+      path: '/test4',
+      name: 'test4',
+      component: () => import('/src/views/NoviceTest.vue')
     }
   ],
 });

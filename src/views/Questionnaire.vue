@@ -31,25 +31,8 @@
         </button>
       </fieldset>
 
-      <div style="
-          font-size: 25px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        " v-else>
-        <h3 style="
-            font-size: 30px;
-            color: white;
-            background-color: black;
-            width: max-content;
-            padding: 8px 20px;
-            border-radius: 20px;
-          ">
-          {{ (totalScore / 4).toFixed(0) }}/20
-        </h3>
-        <h3>Vous obtenez le titre de</h3>
-        <span class="resultat">{{ getCategory }}</span>
+      <div v-else>
+        <component :is="CategoryComponent" />
       </div>
     </main>
   </div>
@@ -60,9 +43,18 @@ import Header from "@/components/Header.vue";
 import { ref, computed } from "vue";
 import questionsData from "@/assets/js/text.json";
 
+import EcoLeader from "@/components/EcoLeader.vue";
+import DefenseurVert from "@/components/DefenseurVert.vue";
+import ActeurVert from "@/components/ActeurVert.vue";
+import NoviceVert from "@/components/NoviceVert.vue";
+
 export default {
   components: {
     Header,
+    EcoLeader,
+    DefenseurVert,
+    ActeurVert,
+    NoviceVert
   },
   setup() {
     const questions = ref(questionsData);
@@ -83,11 +75,18 @@ export default {
       }
     };
 
+    const categoryComponentMapping = {
+      "Éco-Leader": EcoLeader,
+      "Défenseur Vert": DefenseurVert,
+      "Acteur Vert": ActeurVert,
+      "Novice Vert": NoviceVert
+    };
+
     const getCategory = computed(() => {
       const score = totalScore.value;
 
       if (score >= 67 && score <= 80) {
-        return "Eco Leader";
+        return "Éco-Leader";
       } else if (score >= 49 && score <= 66) {
         return "Défenseur Vert";
       } else if (score >= 35 && score <= 48) {
@@ -99,6 +98,9 @@ export default {
         return "Error: Invalid score range.";
       }
     });
+
+    const CategoryComponent = computed(() => categoryComponentMapping[getCategory.value]);
+
 
     const progressPercentage = computed(() => {
       if (currentQuestion.value === null) {
@@ -182,14 +184,15 @@ export default {
       getCategory,
       nextQuestion,
       toggleLanguage,
+      CategoryComponent
     };
   },
 };
 </script>
 
-<style scoped>
+<!-- <style scoped>
 button {
   text-align: center;
   gap: 30px;
 }
-</style>
+</style> -->
