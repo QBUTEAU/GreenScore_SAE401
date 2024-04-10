@@ -4,8 +4,14 @@
 
     <main class="questionnaire">
       <div class="progress-bar" v-if="currentQuestion !== null">
-        <div class="progress-bar__fill" :style="{ width: progressPercentage + '%' }">
-          <span class="progress-bar__percentage" :class="{ 'text-black': progressPercentage === 0 }">
+        <div
+          class="progress-bar__fill"
+          :style="{ width: progressPercentage + '%' }"
+        >
+          <span
+            class="progress-bar__percentage"
+            :class="{ 'text-black': progressPercentage === 0 }"
+          >
             {{ progressPercentage.toFixed(0) }}%
           </span>
         </div>
@@ -17,16 +23,28 @@
         </legend>
         <ul class="propositions" role="radiogroup">
           <li v-for="(answer, aIndex) in currentQuestionAnswers" :key="aIndex">
-            <input type="radio" :name="'q' + currentQuestion" :value="answer.points"
-              v-model="selectedAnswers[currentQuestion]" />
+            <input
+              type="radio"
+              :name="'q' + currentQuestion"
+              :value="answer.points"
+              v-model="selectedAnswers[currentQuestion]"
+            />
             <label :for="'q' + currentQuestion + 'a' + aIndex">
               <span class="answers">{{ answer.text[language] }}</span>
-              <img class="feuille1" src="@/assets/img/feuille2.svg" alt="planet" />
+              <img
+                class="feuille1"
+                src="@/assets/img/feuille2.svg"
+                alt="planet"
+              />
             </label>
           </li>
         </ul>
-        <button class="button buttonQuestionnaire" @click="nextQuestion"
-          :style="{ opacity: selectedAnswers[currentQuestion] ? 1 : 0 }" :disabled="!selectedAnswers[currentQuestion]">
+        <button
+          class="button buttonQuestionnaire"
+          @click="nextQuestion"
+          :style="{ opacity: selectedAnswers[currentQuestion] ? 1 : 0 }"
+          :disabled="!selectedAnswers[currentQuestion]"
+        >
           <span>{{ currentQuestionNextButtonText }}</span>
         </button>
       </fieldset>
@@ -54,32 +72,25 @@ export default {
     EcoLeader,
     DefenseurVert,
     ActeurVert,
-    NoviceVert
+    NoviceVert,
   },
   setup() {
     const questions = ref(questionsData);
     const currentQuestion = ref(0);
     const selectedAnswers = ref(Array.from({ length: 4 }, () => null));
     const totalScore = ref(0);
-    const language = ref("fr");
+    const language = ref(localStorage.getItem("language") || "fr");
 
     const toggleLanguage = () => {
       language.value = language.value === "fr" ? "en" : "fr";
-      var languageSpan = document.getElementById("language-span");
-      if (languageSpan.innerHTML === "EN") {
-        languageSpan.innerHTML = "FR";
-        // Ajoutez ici le code pour changer la langue en français
-      } else {
-        languageSpan.innerHTML = "EN";
-        // Ajoutez ici le code pour changer la langue en anglais
-      }
+      localStorage.setItem("language", language.value);
     };
 
     const categoryComponentMapping = {
       "Éco-Leader": EcoLeader,
       "Défenseur Vert": DefenseurVert,
       "Acteur Vert": ActeurVert,
-      "Novice Vert": NoviceVert
+      "Novice Vert": NoviceVert,
     };
 
     const getCategory = computed(() => {
@@ -99,8 +110,9 @@ export default {
       }
     });
 
-    const CategoryComponent = computed(() => categoryComponentMapping[getCategory.value]);
-
+    const CategoryComponent = computed(
+      () => categoryComponentMapping[getCategory.value]
+    );
 
     const progressPercentage = computed(() => {
       if (currentQuestion.value === null) {
@@ -184,15 +196,8 @@ export default {
       getCategory,
       nextQuestion,
       toggleLanguage,
-      CategoryComponent
+      CategoryComponent,
     };
   },
 };
 </script>
-
-<!-- <style scoped>
-button {
-  text-align: center;
-  gap: 30px;
-}
-</style> -->

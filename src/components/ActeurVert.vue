@@ -3,7 +3,8 @@ import { ref } from "vue";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
-const language = ref("fr");
+const language = ref(localStorage.getItem("language") || "fr");
+
 const toggleLanguage = () => {
   language.value = language.value === "fr" ? "en" : "fr";
 };

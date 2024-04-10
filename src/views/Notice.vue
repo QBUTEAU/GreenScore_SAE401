@@ -1,17 +1,19 @@
 <script setup>
 import { ref } from "vue";
-import { RouterLink } from "vue-router";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
-const language = ref("fr");
+const language = ref(localStorage.getItem("language") || "fr");
+
 const toggleLanguage = () => {
   language.value = language.value === "fr" ? "en" : "fr";
   var languageSpan = document.getElementById("language-span");
   if (languageSpan.innerHTML === "EN") {
     languageSpan.innerHTML = "FR";
+    localStorage.setItem("language", "fr");
   } else {
     languageSpan.innerHTML = "EN";
+    localStorage.setItem("language", "en");
   }
 };
 
