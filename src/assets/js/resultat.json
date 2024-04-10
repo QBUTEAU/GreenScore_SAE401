@@ -1,5 +1,5 @@
 {
-  "results": {
+  "EcoLeader": {
     "level": {
       "fr": {
         "title": "Éco Leader",
@@ -56,6 +56,186 @@
       },
       "en": {
         "text": "Your commitment to ecology is a driving force for change, and we encourage you to continue on this path. Together, we can create a more sustainable future for all."
+      }
+    }
+  },
+  "DefenseurVert": {
+    "level": {
+      "fr": {
+        "title": "Défenseur Vert",
+        "text": "Suite à vos réponses, vous obtenez le titre de :"
+      },
+      "en": {
+        "title": "Green Defender",
+        "text": "Based on your answers, you have been awarded the title of:"
+      }
+    },
+    "advice1": {
+      "fr": {
+        "text": "Bravo pour votre engagement en faveur de l'écologie ! Votre détermination à protéger notre planète est admirable et vous met sur la voie pour devenir un véritable héros de l'environnement. Vos actions, telles que le tri des déchets et l'utilisation de compost, démontrent un engagement louable envers la durabilité."
+      },
+      "en": {
+        "text": "Bravo for your commitment to the environment! Your determination to protect our planet is admirable and sets you on the path to becoming a true environmental hero. Your actions, such as sorting waste and using compost, demonstrate a commendable commitment to sustainability."
+      }
+    },
+    "advice2": {
+      "fr": {
+        "text": "Pour aller encore plus loin dans votre démarche écologique, voici quelques conseils supplémentaires :"
+      },
+      "en": {
+        "text": "To take your eco-friendly approach even further, here are a few additional tips:"
+      }
+    },
+    "advice3": {
+      "fr": {
+        "text": "Continuez à utiliser des ampoules à économie d'énergie ou des LED pour réduire votre consommation d'électricité. Ces petites actions peuvent avoir un impact significatif sur votre empreinte carbone."
+      },
+      "en": {
+        "text": "Continue to use energy-saving light bulbs or LEDs to reduce your electricity consumption. These small actions can have a significant impact on your carbon footprint."
+      }
+    },
+    "advice4": {
+      "fr": {
+        "text": "Cherchez des moyens d'intégrer des pratiques écologiques dans votre travail et votre vie quotidienne. Par exemple, vous pourriez encourager votre employeur à mettre en place des initiatives de durabilité sur le lieu de travail, comme le recyclage ou l'utilisation d'énergie renouvelable."
+      },
+      "en": {
+        "text": "Look for ways to integrate green practices into your work and daily life. For example, you could encourage your employer to implement sustainability initiatives in the workplace, such as recycling or using renewable energy."
+      }
+    },
+    "advice5": {
+      "fr": {
+        "text": "Continuez à vous informer sur les problèmes environnementaux et à sensibiliser votre entourage à ces questions. En partageant vos connaissances et en encourageant les autres à agir, vous pouvez multiplier l'impact de vos actions écologiques."
+      },
+      "en": {
+        "text": "Continue to educate yourself and others about environmental issues. By sharing your knowledge and encouraging others to take action, you can multiply the impact of your ecological actions."
+      }
+    },
+    "advice6": {
+      "fr": {
+        "text": "En suivant ces conseils, vous pouvez continuer à faire progresser votre engagement pour l'écologie et inspirer les autres autour de vous. Votre détermination à protéger notre planète est une source d'inspiration, et nous vous encourageons à poursuivre vos efforts pour un avenir plus durable."
+      },
+      "en": {
+        "text": "By following these tips, you can continue to advance your commitment to ecology and inspire others around you. Your determination to protect our planet is a source of inspiration, and we encourage you to continue your efforts for a more sustainable future."
+      }
+    }
+  },
+  "ActeurVert": {
+    "level": {
+      "fr": {
+        "title": "Acteur Vert",
+        "text": "Suite à vos réponses, vous obtenez le titre de :"
+      },
+      "en": {
+        "title": "Green Actor",
+        "text": "Based on your answers, you have been awarded the title of:"
+      }
+    },
+    "advice1": {
+      "fr": {
+        "text": "Félicitations pour votre engagement envers l'écologie ! Votre volonté de prendre des mesures pour protéger notre planète est un premier pas important vers un mode de vie plus durable. Bien que vous n'ayez pas encore atteint le statut d'Éco Leader, vous avez déjà pris des mesures significatives pour réduire votre empreinte environnementale."
+      },
+      "en": {
+        "text": "Congratulations on your commitment to the environment! Your willingness to take action to protect our planet is an important first step towards a more sustainable lifestyle. Although you haven't yet achieved Eco Leader status, you've already taken significant steps to reduce your environmental footprint."
+      }
+    },
+    "advice2": {
+      "fr": {
+        "text": "Voici quelques conseils supplémentaires pour vous aider à progresser vers le niveau d'Éco Leader et à maximiser votre impact écologique :"
+      },
+      "en": {
+        "text": "Here are a few more tips to help you progress towards Eco Leader status and maximize your ecological impact:"
+      }
+    },
+    "advice3": {
+      "fr": {
+        "text": "Poursuivez vos efforts pour réduire votre consommation d'énergie en utilisant des ampoules à économie d'énergie et en éteignant les appareils électroniques inutilisés. En adoptant de simples habitudes quotidiennes, vous pouvez contribuer à réduire votre empreinte carbone."
+      },
+      "en": {
+        "text": "Continue your efforts to reduce energy consumption by using energy-saving light bulbs and switching off unused electronic devices. By adopting simple daily habits, you can help reduce your carbon footprint."
+      }
+    },
+    "advice4": {
+      "fr": {
+        "text": "Engagez-vous à apprendre davantage sur les enjeux environnementaux et les solutions durables. En vous éduquant et en partageant vos connaissances avec d'autres, vous pouvez amplifier l'impact de vos actions."
+      },
+      "en": {
+        "text": "Commit to learning more about environmental issues and sustainable solutions. By educating yourself and sharing your knowledge with others, you can amplify the impact of your actions."
+      }
+    },
+    "advice5": {
+      "fr": {
+        "text": "Explorez des moyens de réduire votre dépendance aux combustibles fossiles en optant pour des modes de transport durables. En privilégiant les transports en commun, le vélo ou la marche, vous pouvez réduire les émissions de gaz à effet de serre associées à vos déplacements."
+      },
+      "en": {
+        "text": "Explore ways to reduce your dependence on fossil fuels by choosing sustainable modes of transportation. By choosing public transport, cycling or walking, you can reduce the greenhouse gas emissions associated with your journeys."
+      }
+    },
+    "advice6": {
+      "fr": {
+        "text": "Continuez à faire de petits changements positifs dans votre vie quotidienne et à inspirer ceux qui vous entourent à faire de même. En travaillant ensemble, nous pouvons tous avoir un impact significatif sur la santé de notre planète."
+      },
+      "en": {
+        "text": "Continue to make small, positive changes in your daily life and inspire those around you to do the same. By working together, we can all have a significant impact on the health of our planet."
+      }
+    }
+  },
+  "NoviceVert": {
+    "level": {
+      "fr": {
+        "title": "Novice Vert",
+        "text": "Suite à vos réponses, vous obtenez le titre de :"
+      },
+      "en": {
+        "title": "Green Beginner",
+        "text": "Based on your answers, you have been awarded the title of:"
+      }
+    },
+    "advice1": {
+      "fr": {
+        "text": "Bravo pour vos premiers pas vers un mode de vie plus respectueux de l'environnement ! Vous avez déjà franchi le pas en adoptant des pratiques telles que le recyclage et la réduction de votre consommation d'énergie, ce qui est un excellent début. Bien que vous soyez encore aux débuts de votre voyage écologique, vous êtes sur la bonne voie pour devenir un éco-citoyen exemplaire."
+      },
+      "en": {
+        "text": "Congratulations on your commitment to the environment! Your willingness to take action to protect our planet is an important first step towards a more sustainable lifestyle. Although you haven't yet achieved Eco Leader status, you've already taken significant steps to reduce your environmental footprint."
+      }
+    },
+    "advice2": {
+      "fr": {
+        "text": "Voici quelques conseils supplémentaires pour vous aider à progresser dans votre engagement écologique :"
+      },
+      "en": {
+        "text": "Here are a few more tips to help you progress towards Eco Leader status and maximize your ecological impact:"
+      }
+    },
+    "advice3": {
+      "fr": {
+        "text": "Continuez à explorer de nouvelles façons de réduire votre empreinte carbone, comme l'utilisation d'ampoules à économie d'énergie ou le covoiturage. Chaque petit geste compte pour préserver notre planète."
+      },
+      "en": {
+        "text": "Continue your efforts to reduce energy consumption by using energy-saving light bulbs and switching off unused electronic devices. By adopting simple daily habits, you can help reduce your carbon footprint."
+      }
+    },
+    "advice4": {
+      "fr": {
+        "text": "Engagez-vous à apprendre davantage sur les enjeux environnementaux et les solutions durables. En vous éduquant et en partageant vos connaissances avec d'autres, vous pouvez amplifier l'impact de vos actions."
+      },
+      "en": {
+        "text": "Commit to learning more about environmental issues and sustainable solutions. By educating yourself and sharing your knowledge with others, you can amplify the impact of your actions."
+      }
+    },
+    "advice5": {
+      "fr": {
+        "text": "Impliquez-vous dans des initiatives locales qui visent à protéger l'environnement et à promouvoir la durabilité. Que ce soit en participant à des événements de nettoyage ou en soutenant des projets de conservation, votre contribution est précieuse."
+      },
+      "en": {
+        "text": "Explore ways to reduce your dependence on fossil fuels by choosing sustainable modes of transportation. By choosing public transport, cycling or walking, you can reduce the greenhouse gas emissions associated with your journeys."
+      }
+    },
+    "advice6": {
+      "fr": {
+        "text": "Continuez à avancer pas à pas dans votre voyage vers un mode de vie plus écologique. Chaque petit effort compte et contribue à créer un monde plus durable pour les générations futures."
+      },
+      "en": {
+        "text": "Continue to make small, positive changes in your daily life and inspire those around you to do the same. By working together, we can all have a significant impact on the health of our planet."
       }
     }
   }
