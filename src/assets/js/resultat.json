@@ -1,0 +1,62 @@
+{
+  "results": {
+    "level": {
+      "fr": {
+        "title": "Éco Leader",
+        "text": "Suite à vos réponses, vous obtenez le titre de :"
+      },
+      "en": {
+        "title": "Eco Leader",
+        "text": "Based on your answers, you have been awarded the title of:"
+      }
+    },
+    "advice1": {
+      "fr": {
+        "text": "Félicitations, vous êtes un véritable modèle en matière d'engagement écologique ! Vos actions exemplaires, telles que le tri des déchets et l'utilisation de compost, vous hissent au rang des Éco Leader. Vous incarnez l'excellence en matière de durabilité, et votre dévouement est une source d'inspiration pour nous tous."
+      },
+      "en": {
+        "text": "Congratulations, you are a true role model when it comes to environmental commitment! Your exemplary actions, such as waste sorting and composting, elevate you to the rank of Eco Leader. You embody excellence in sustainability, and your dedication is a source of inspiration for us all."
+      }
+    },
+    "advice2": {
+      "fr": {
+        "text": "Cependant, même les Éco Leader peuvent continuer à progresser et à avoir un impact encore plus important sur l'environnement. Voici quelques conseils :"
+      },
+      "en": {
+        "text": "However, even Eco Leaders can continue to progress and have an even greater impact on the environment. Here are some tips:"
+      }
+    },
+    "advice3": {
+      "fr": {
+        "text": "Poursuivez vos efforts en matière de réduction des déchets et d'utilisation de ressources durables. Vous pouvez encore améliorer votre impact en encourageant d'autres personnes à adopter des pratiques similaires."
+      },
+      "en": {
+        "text": "Continue your efforts in waste reduction and the use of sustainable resources. You can further improve your impact by encouraging others to adopt similar practices."
+      }
+    },
+    "advice4": {
+      "fr": {
+        "text": "Explorez de nouvelles façons d'intégrer des pratiques écologiques dans votre vie quotidienne et votre communauté. Que ce soit en participant à des initiatives locales ou en soutenant des entreprises durables, vous pouvez contribuer à faire progresser la cause de la durabilité."
+      },
+      "en": {
+        "text": "Explore new ways to incorporate eco-friendly practices into your daily life and community. Whether by participating in local initiatives or supporting sustainable businesses, you can help advance the cause of sustainability."
+      }
+    },
+    "advice5": {
+      "fr": {
+        "text": "Continuez à vous informer sur les problèmes environnementaux et à partager vos connaissances avec votre entourage. En sensibilisant les autres aux enjeux environnementaux, vous pouvez inspirer de nouvelles actions et amplifier votre impact."
+      },
+      "en": {
+        "text": "Continue to educate yourself on environmental issues and share your knowledge with those around you. By raising awareness about environmental challenges, you can inspire new actions and amplify your impact."
+      }
+    },
+    "advice6": {
+      "fr": {
+        "text": "Votre engagement en faveur de l'écologie est une force motrice pour le changement, et nous vous encourageons à continuer sur cette voie. Ensemble, nous pouvons créer un avenir plus durable pour tous."
+      },
+      "en": {
+        "text": "Your commitment to ecology is a driving force for change, and we encourage you to continue on this path. Together, we can create a more sustainable future for all."
+      }
+    }
+  }
+}
