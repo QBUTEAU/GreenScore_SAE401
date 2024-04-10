@@ -41,5 +41,5 @@ const $json = translationData;
       </div>
     </div>
   </main>
-  <Footer />
+  <Footer :language="language" @toggleLanguage="toggleLanguage" />
 </template>

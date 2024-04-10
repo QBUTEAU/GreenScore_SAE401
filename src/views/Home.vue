@@ -17,8 +17,6 @@ const toggleLanguage = () => {
 
 import translationData from "@/assets/js/accueil.json";
 const $json = translationData;
-
-
 </script>
 
 <template>
@@ -46,7 +44,10 @@ const $json = translationData;
     <div class="presentation__texte">
       <h2>{{ $json.presentation[language].title }}</h2>
       <div class="presentation-texte__p">
-        <p v-for="paragraph in $json.presentation[language].text" :key="paragraph">
+        <p
+          v-for="paragraph in $json.presentation[language].text"
+          :key="paragraph"
+        >
           {{ paragraph }}
         </p>
         <img class="feuille1" src="@/assets/img/feuille1.svg" alt="planet" />
@@ -66,7 +67,10 @@ const $json = translationData;
     <div class="ecologie__axes">
       <h2>{{ $json.ecologie[language].title }}</h2>
       <div class="ecologie-texte__p">
-        <div v-for="(category, index) in $json.ecologie[language].categorie" :key="index">
+        <div
+          v-for="(category, index) in $json.ecologie[language].categorie"
+          :key="index"
+        >
           <p>
             <strong>{{ category }}</strong>
             {{ $json.ecologie[language].text[index] }}
@@ -82,7 +86,10 @@ const $json = translationData;
     <div class="levels__texte">
       <h2>{{ $json.levels[language].title }}</h2>
       <div class="levels-texte__p">
-        <template v-for="(category, index) in $json.levels[language].categories" :key="index">
+        <template
+          v-for="(category, index) in $json.levels[language].categories"
+          :key="index"
+        >
           <p>
             <strong>{{ category }}</strong>
             {{ $json.levels[language].text[index] }}
@@ -105,5 +112,5 @@ const $json = translationData;
     </RouterLink>
   </div>
 
-  <Footer />
+  <Footer :language="language" @toggleLanguage="toggleLanguage" />
 </template>

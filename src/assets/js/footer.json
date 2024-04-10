@@ -1,0 +1,16 @@
+{
+  "footer": {
+    "fr": {
+      "text": "© 2024 GreenScore - Tous droits réservés",
+      "Accueil": "Accueil",
+      "MLegales": "Mentions Légales",
+      "Questionnaire": "Questionnaire"
+    },
+    "en": {
+      "text": "© 2024 GreenScore - All rights reserved",
+      "Accueil": "Home",
+      "MLegales": "Legal Notice",
+      "Questionnaire": "Questionnaire"
+    }
+  }
+}

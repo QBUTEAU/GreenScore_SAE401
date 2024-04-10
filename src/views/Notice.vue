@@ -20,7 +20,6 @@ const $json = translationData;
 </script>
 
 <template>
-
   <Header :language="language" @toggleLanguage="toggleLanguage" />
 
   <main class="mentions">
@@ -79,5 +78,5 @@ const $json = translationData;
     </div>
   </main>
 
-  <Footer />
+  <Footer :language="language" @toggleLanguage="toggleLanguage" />
 </template>
