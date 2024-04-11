@@ -9,7 +9,7 @@ L'ensemble du site est entièrement intégré en français et en anglais.
 
 ### 👥 Membres et parties réalisées :
 * **Quentin Buteau** : Développement Front ;
-* **Jathushan Selvarajah** : Intégration et Back-Office ;
+* **Jathushan Selvarajah** : Intégration ;
 * **Okesse Smith** et **Axel Tribondeau** : Infographie, traductions et rédactionnel.
 
 ### 💻 Technologies utilisées :
