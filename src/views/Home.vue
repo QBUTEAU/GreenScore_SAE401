@@ -1,5 +1,8 @@
 <template>
   <div>
+    <p>Current Language: {{ language }}</p>
+    <!-- Ajout pour vérification -->
+
     <Header :language="language" @toggleLanguage="toggleLanguage" />
 
     <main class="hero-header">

@@ -21,24 +21,35 @@
                 45.2-87.7 55.3-151.6H493.4z"
           />
         </svg>
-        <span id="language-span">{{ language }}</span>
+        <span id="language-span">{{ languageText }}</span>
+        <!-- Modifié ici -->
       </div>
     </button>
   </header>
 </template>
 
 <script setup>
-import { ref, defineProps, defineEmits } from "vue";
+import { ref, defineEmits, watch } from "vue";
 import { RouterLink } from "vue-router";
 
-const { language } = defineProps(["language"]);
+const language = ref(localStorage.getItem("language") || "fr");
 const emit = defineEmits();
 
 const toggleLanguage = () => {
+  language.value = language.value === "fr" ? "en" : "fr";
+  localStorage.setItem("language", language.value);
   emit("toggleLanguage");
 };
 
 const scrollToTop = () => {
   window.scrollTo(0, 0);
 };
+
+// Utilisation d'une propriété calculée pour mettre à jour le texte du bouton en temps réel
+const languageText = ref(language.value === "fr" ? "FR" : "EN");
+
+// Mettre à jour languageText lorsque la langue actuelle change
+watch(language, (newValue) => {
+  languageText.value = newValue === "fr" ? "FR" : "EN";
+});
 </script>
