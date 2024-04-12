@@ -6,11 +6,7 @@
       <span class="results-level__span greenDarker">{{
         $json.EcoLeader.level[language].title
       }}</span>
-      <img
-        class="results__illus"
-        src="@/assets/img/EcoLeader.svg"
-        alt="EcoLeader"
-      />
+      <img class="results__illus" src="@/assets/img/EcoLeader.svg" alt="EcoLeader" />
     </div>
     <div class="results__advices">
       <div class="results-advices__texte">
@@ -27,19 +23,11 @@
       </div>
 
       <div class="results__button">
-        <a
-          v-if="language === 'fr'"
-          :href="downloadLink('fr')"
-          download="EcoLeaderFR.jpg"
-        >
-          <button class="button">Télécharger (FR)</button>
+        <a v-if="language === 'fr'" :href="downloadLink('fr')" download="EcoLeaderFR.jpg">
+          <button class="button">Télécharger</button>
         </a>
-        <a
-          v-if="language === 'en'"
-          :href="downloadLink('en')"
-          download="EcoLeaderEN.jpg"
-        >
-          <button class="button">Download (EN)</button>
+        <a v-if="language === 'en'" :href="downloadLink('en')" download="EcoLeaderEN.jpg">
+          <button class="button">Download</button>
         </a>
       </div>
     </div>
