@@ -30,14 +30,14 @@
         <a
           v-if="language === 'fr'"
           :href="downloadLink('fr')"
-          download="NoviceFR.jpg"
+          download="NoviceVertFR.jpg"
         >
           <button class="button">Télécharger (FR)</button>
         </a>
         <a
           v-if="language === 'en'"
           :href="downloadLink('en')"
-          download="NoviceEN.jpg"
+          download="GreenBeginnerEN.jpg"
         >
           <button class="button">Download (EN)</button>
         </a>
@@ -61,10 +61,10 @@ const toggleLanguage = () => {
 };
 
 // Importer les images directement ici
-//import NoviceFR from "@/assets/img/NoviceFR.jpg";
-//import NoviceEN from "@/assets/img/NoviceEN.jpg";
+//import NoviceVertFR from "@/assets/img/NoviceVertFR.jpg";
+//import GreenBeginnerEN from "@/assets/img/GreenBeginnerEN.jpg";
 
 const downloadLink = (lang) => {
-  return lang === "fr" ? NoviceFR : NoviceEN;
+  return lang === "fr" ? NoviceVertFR : GreenBeginnerEN;
 };
 </script>
