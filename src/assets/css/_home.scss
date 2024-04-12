@@ -1,7 +1,7 @@
 // ---------- Presentation.vue ---------- //
 
 .hero-header {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     @include flexOriginel(column, center, center);
 
@@ -440,7 +440,7 @@ fieldset {
 
     .questionnaire {
         height: auto;
-        margin-top: 60px;
+        margin-top: 70px;
 
         .progress-bar {
             width: 80%;
@@ -458,7 +458,8 @@ fieldset {
 
         .question {
             height: auto;
-            font-size: 22px;
+            font-size: 20px;
+            margin: 20px 0;
         }
     }
 }
