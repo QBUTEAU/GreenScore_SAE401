@@ -6,7 +6,11 @@
       <span class="results-level__span green">{{
         $json.DefenseurVert.level[language].title
       }}</span>
-      <img class="results__illus" src="@/assets/img/DefenseurVert.svg" alt="DefenseurVert">
+      <img
+        class="results__illus"
+        src="@/assets/img/DefenseurVert.svg"
+        alt="DefenseurVert"
+      />
     </div>
     <div class="results__advices">
       <div class="results-advices__texte">
@@ -23,9 +27,12 @@
       </div>
 
       <div class="results__button">
-        <a v-if="language === 'fr'" :href="downloadLink('fr')" download><button class="button">Résultats
-            (FR)</button></a>
-        <a v-if="language === 'en'" :href="downloadLink('en')" download><button class="button">Results (EN)</button></a>
+        <a v-if="language === 'fr'" :href="downloadLink('fr')" download
+          ><button class="button">Télécharger (FR)</button></a
+        >
+        <a v-if="language === 'en'" :href="downloadLink('en')" download
+          ><button class="button">Download (EN)</button></a
+        >
       </div>
     </div>
   </main>
