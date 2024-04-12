@@ -27,12 +27,20 @@
       </div>
 
       <div class="results__button">
-        <a v-if="language === 'fr'" :href="downloadLink('fr')" download
-          ><button class="button">Télécharger (FR)</button></a
+        <a
+          v-if="language === 'fr'"
+          :href="downloadLink('fr')"
+          download="DefenseurVertFR.jpg"
         >
-        <a v-if="language === 'en'" :href="downloadLink('en')" download
-          ><button class="button">Download (EN)</button></a
+          <button class="button">Télécharger (FR)</button>
+        </a>
+        <a
+          v-if="language === 'en'"
+          :href="downloadLink('en')"
+          download="GreenDefenderEN.jpg"
         >
+          <button class="button">Download (EN)</button>
+        </a>
       </div>
     </div>
   </main>
@@ -52,9 +60,11 @@ const toggleLanguage = () => {
   language.value = language.value === "fr" ? "en" : "fr";
 };
 
+// Importer les images directement ici
+import DefenseurVertFR from "@/assets/img/DefenseurVertFR.jpg";
+import GreenDefenderEN from "@/assets/img/GreenDefenderEN.jpg";
+
 const downloadLink = (lang) => {
-  return lang === "fr"
-    ? "/assets/img/DefenseurVertFR.jpg"
-    : "/assets/img/GreenDefenderEN.jpg";
+  return lang === "fr" ? DefenseurVertFR : GreenDefenderEN;
 };
 </script>

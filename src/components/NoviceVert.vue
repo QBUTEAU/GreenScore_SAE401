@@ -6,7 +6,11 @@
       <span class="results-level__span greenLight">{{
         $json.NoviceVert.level[language].title
       }}</span>
-      <img class="results__illus" src="@/assets/img/NoviceVert.svg" alt="NoviceVert">
+      <img
+        class="results__illus"
+        src="@/assets/img/NoviceVert.svg"
+        alt="NoviceVert"
+      />
     </div>
     <div class="results__advices">
       <div class="results-advices__texte">
@@ -23,9 +27,20 @@
       </div>
 
       <div class="results__button">
-        <a v-if="language === 'fr'" :href="downloadLink('fr')" download><button class="button">Résultats
-            (FR)</button></a>
-        <a v-if="language === 'en'" :href="downloadLink('en')" download><button class="button">Results (EN)</button></a>
+        <a
+          v-if="language === 'fr'"
+          :href="downloadLink('fr')"
+          download="NoviceFR.jpg"
+        >
+          <button class="button">Télécharger (FR)</button>
+        </a>
+        <a
+          v-if="language === 'en'"
+          :href="downloadLink('en')"
+          download="NoviceEN.jpg"
+        >
+          <button class="button">Download (EN)</button>
+        </a>
       </div>
     </div>
   </main>
@@ -45,9 +60,11 @@ const toggleLanguage = () => {
   language.value = language.value === "fr" ? "en" : "fr";
 };
 
+// Importer les images directement ici
+//import NoviceFR from "@/assets/img/NoviceFR.jpg";
+//import NoviceEN from "@/assets/img/NoviceEN.jpg";
+
 const downloadLink = (lang) => {
-  return lang === "fr"
-    ? "/assets/img/NoviceVertFR.jpg"
-    : "/assets/img/GreenBeginnerEN.jpg";
+  return lang === "fr" ? NoviceFR : NoviceEN;
 };
 </script>
