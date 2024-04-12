@@ -60,9 +60,11 @@ const toggleLanguage = () => {
   language.value = language.value === "fr" ? "en" : "fr";
 };
 
+// Importer les images directement ici
+import ActeurVertFR from "@/assets/img/ActeurVertFR.jpg";
+import GreenActorEN from "@/assets/img/GreenActorEN.jpg";
+
 const downloadLink = (lang) => {
-  return lang === "fr"
-    ? "/assets/img/ActeurVertFR.jpg"
-    : "/assets/img/GreenActorEN.jpg";
+  return lang === "fr" ? ActeurVertFR : GreenActorEN;
 };
 </script>
