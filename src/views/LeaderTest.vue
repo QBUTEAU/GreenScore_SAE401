@@ -9,6 +9,7 @@ import Footer from "@/components/Footer.vue";
         <div class="results__level">
             <p>Suite à vos réponses, vous obtenez le titre de :</p>
             <span class="results-level__span greenDarker">Éco Leader</span>
+            <img class="results__illus" src="@/assets/img/EcoLeader.svg" alt="EcoLeader">
         </div>
         <div class="results__advices">
             <div class="results-advices__texte">
@@ -51,5 +52,4 @@ import Footer from "@/components/Footer.vue";
             </div>
         </div>
     </main>
-    <Footer />
 </template>

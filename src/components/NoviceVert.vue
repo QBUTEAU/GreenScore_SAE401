@@ -6,6 +6,7 @@
       <span class="results-level__span greenLight">{{
         $json.NoviceVert.level[language].title
       }}</span>
+      <img class="results__illus" src="@/assets/img/NoviceVert.svg" alt="NoviceVert">
     </div>
     <div class="results__advices">
       <div class="results-advices__texte">
@@ -22,12 +23,9 @@
       </div>
 
       <div class="results__button">
-        <a v-if="language === 'fr'" :href="downloadLink('fr')" download
-          ><button class="button">Résultats (FR)</button></a
-        >
-        <a v-if="language === 'en'" :href="downloadLink('en')" download
-          ><button class="button">Results (EN)</button></a
-        >
+        <a v-if="language === 'fr'" :href="downloadLink('fr')" download><button class="button">Résultats
+            (FR)</button></a>
+        <a v-if="language === 'en'" :href="downloadLink('en')" download><button class="button">Results (EN)</button></a>
       </div>
     </div>
   </main>
@@ -49,7 +47,7 @@ const toggleLanguage = () => {
 
 const downloadLink = (lang) => {
   return lang === "fr"
-    ? "/path/vers/le/fichier_fr.pdf"
-    : "/path/vers/le/fichier_en.pdf";
+    ? "/assets/img/NoviceVertFR.jpg"
+    : "/assets/img/GreenBeginnerEN.jpg";
 };
 </script>
