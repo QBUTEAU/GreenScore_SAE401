@@ -1,17 +1,3 @@
-<script setup>
-import { ref } from "vue";
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
-
-const language = ref(localStorage.getItem("language") || "fr");
-
-const toggleLanguage = () => {
-  language.value = language.value === "fr" ? "en" : "fr";
-};
-import translationData from "@/assets/js/resultat.json";
-const $json = translationData;
-</script>
-
 <template>
   <Header :language="language" @toggleLanguage="toggleLanguage" />
   <main class="results">
@@ -36,10 +22,34 @@ const $json = translationData;
       </div>
 
       <div class="results__button">
-        <a href="" download><button class="button">Résultats (FR)</button></a>
-        <a href="" download><button class="button">Results (EN)</button></a>
+        <a v-if="language === 'fr'" :href="downloadLink('fr')" download
+          ><button class="button">Résultats (FR)</button></a
+        >
+        <a v-if="language === 'en'" :href="downloadLink('en')" download
+          ><button class="button">Results (EN)</button></a
+        >
       </div>
     </div>
   </main>
   <Footer :language="language" @toggleLanguage="toggleLanguage" />
 </template>
+
+<script setup>
+import { ref } from "vue";
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+import translationData from "@/assets/js/resultat.json";
+
+const language = ref(localStorage.getItem("language") || "fr");
+const $json = translationData;
+
+const toggleLanguage = () => {
+  language.value = language.value === "fr" ? "en" : "fr";
+};
+
+const downloadLink = (lang) => {
+  return lang === "fr"
+    ? "/path/vers/le/fichier_fr.pdf"
+    : "/path/vers/le/fichier_en.pdf";
+};
+</script>
