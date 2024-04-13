@@ -454,15 +454,15 @@
       },
       {
         "text": {
-          "fr": "Utiliser des verres en plastique jetables.",
-          "en": "Use disposable plastic glasses."
+          "fr": "Des verres en plastique jetables.",
+          "en": "Disposable plastic glasses."
         },
         "points": 2
       },
       {
         "text": {
-          "fr": "Utiliser des gobelets en carton.",
-          "en": "Use cardboard cups."
+          "fr": "Des gobelets en carton.",
+          "en": "Cardboard cups."
         },
         "points": 4
       },
@@ -487,29 +487,29 @@
     "answers": [
       {
         "text": {
-          "fr": "Opter pour la livraison à domicile, même si cela implique des emballages supplémentaires.",
-          "en": "Opt for home delivery, even if it involves additional packaging."
+          "fr": "J'opte pour la livraison à domicile, même si cela implique des emballages supplémentaires.",
+          "en": "I opt for home delivery, even if it involves additional packaging."
         },
         "points": 3
       },
       {
         "text": {
-          "fr": "Choisir l'option de retrait en magasin pour éviter les émissions liées à la livraison.",
-          "en": "Choose the option of in-store pickup to avoid emissions related to delivery."
+          "fr": "Je choisis l'option de retrait en magasin pour éviter les émissions liées à la livraison.",
+          "en": "I choose the option of in-store pickup to avoid emissions related to delivery."
         },
         "points": 4
       },
       {
         "text": {
-          "fr": "Sélectionner des articles avec une expédition rapide, même si cela peut augmenter l'empreinte carbone.",
-          "en": "Select items with fast shipping, even if it may increase the carbon footprint."
+          "fr": "Je sélectionne des articles avec une expédition rapide, même si cela peut augmenter l'empreinte carbone.",
+          "en": "I select items with fast shipping, even if it may increase the carbon footprint."
         },
         "points": 1
       },
       {
         "text": {
-          "fr": "Faire du Click and Collect pour limiter les émissions de CO2.",
-          "en": "Opt for Click and Collect to limit CO2 emissions."
+          "fr": "Je fais du Click and Collect pour limiter les émissions de CO2.",
+          "en": "I opt for Click and Collect to limit CO2 emissions."
         },
         "points": 2
       }
@@ -527,29 +527,29 @@
     "answers": [
       {
         "text": {
-          "fr": "Les donner à des associations caritatives ou les vendre dans des friperies.",
-          "en": "Donate them to charities or sell them in thrift stores."
+          "fr": "Je les donne à des associations caritatives ou les vend dans des friperies.",
+          "en": "I donate them to charities or sell them in thrift stores."
         },
         "points": 4
       },
       {
         "text": {
-          "fr": "Les réutiliser en chiffon.",
-          "en": "Reuse them as rags."
+          "fr": "Je les réutilise en chiffon.",
+          "en": "I reuse them as rags."
         },
         "points": 3
       },
       {
         "text": {
-          "fr": "Les jeter à la poubelle.",
-          "en": "Throw them in the trash."
+          "fr": "Je les jette à la poubelle.",
+          "en": "I throw them in the trash."
         },
         "points": 2
       },
       {
         "text": {
-          "fr": "Les brûler dans votre jardin.",
-          "en": "Burn them in your garden."
+          "fr": "Je les brûle dans mon jardin.",
+          "en": "I burn them in my garden."
         },
         "points": 1
       }

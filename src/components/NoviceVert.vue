@@ -48,9 +48,8 @@ const toggleLanguage = () => {
   language.value = language.value === "fr" ? "en" : "fr";
 };
 
-// Importer les images directement ici
-//import NoviceVertFR from "@/assets/img/NoviceVertFR.jpg";
-//import GreenBeginnerEN from "@/assets/img/GreenBeginnerEN.jpg";
+import NoviceVertFR from "@/assets/img/NoviceVertFR.jpg";
+import GreenBeginnerEN from "@/assets/img/GreenBeginnerEN.jpg";
 
 const downloadLink = (lang) => {
   return lang === "fr" ? NoviceVertFR : GreenBeginnerEN;
