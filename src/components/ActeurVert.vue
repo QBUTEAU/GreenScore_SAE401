@@ -6,11 +6,7 @@
       <span class="results-level__span greenLighter">{{
         $json.ActeurVert.level[language].title
       }}</span>
-      <img
-        class="results__illus"
-        src="@/assets/img/ActeurVert.svg"
-        alt="ActeurVert"
-      />
+      <img class="results__illus" src="@/assets/img/ActeurVert.svg" alt="ActeurVert" />
     </div>
     <div class="results__advices">
       <div class="results-advices__texte">
@@ -27,19 +23,11 @@
       </div>
 
       <div class="results__button">
-        <a
-          v-if="language === 'fr'"
-          :href="downloadLink('fr')"
-          download="ActeurVertFR.jpg"
-        >
-          <button class="button">Résultats (FR)</button>
+        <a v-if="language === 'fr'" :href="downloadLink('fr')" download="ActeurVertFR.jpg">
+          <button class="button">Télécharger</button>
         </a>
-        <a
-          v-if="language === 'en'"
-          :href="downloadLink('en')"
-          download="GreenActorEN.jpg"
-        >
-          <button class="button">Results (EN)</button>
+        <a v-if="language === 'en'" :href="downloadLink('en')" download="GreenActorEN.jpg">
+          <button class="button">Download</button>
         </a>
       </div>
     </div>
@@ -60,9 +48,11 @@ const toggleLanguage = () => {
   language.value = language.value === "fr" ? "en" : "fr";
 };
 
+// Importer les images directement ici
+import ActeurVertFR from "@/assets/img/ActeurVertFR.jpg";
+import GreenActorEN from "@/assets/img/GreenActorEN.jpg";
+
 const downloadLink = (lang) => {
-  return lang === "fr"
-    ? "/assets/img/ActeurVertFR.jpg"
-    : "/assets/img/GreenActorEN.jpg";
+  return lang === "fr" ? ActeurVertFR : GreenActorEN;
 };
 </script>

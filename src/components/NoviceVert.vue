@@ -6,11 +6,7 @@
       <span class="results-level__span greenLight">{{
         $json.NoviceVert.level[language].title
       }}</span>
-      <img
-        class="results__illus"
-        src="@/assets/img/NoviceVert.svg"
-        alt="NoviceVert"
-      />
+      <img class="results__illus" src="@/assets/img/NoviceVert.svg" alt="NoviceVert" />
     </div>
     <div class="results__advices">
       <div class="results-advices__texte">
@@ -27,19 +23,11 @@
       </div>
 
       <div class="results__button">
-        <a
-          v-if="language === 'fr'"
-          :href="downloadLink('fr')"
-          download="NoviceVertFR.jpg"
-        >
-          <button class="button">Télécharger (FR)</button>
+        <a v-if="language === 'fr'" :href="downloadLink('fr')" download="NoviceVertFR.jpg">
+          <button class="button">Télécharger</button>
         </a>
-        <a
-          v-if="language === 'en'"
-          :href="downloadLink('en')"
-          download="GreenBeginnerEN.jpg"
-        >
-          <button class="button">Download (EN)</button>
+        <a v-if="language === 'en'" :href="downloadLink('en')" download="GreenBeginnerEN.jpg">
+          <button class="button">Download</button>
         </a>
       </div>
     </div>
