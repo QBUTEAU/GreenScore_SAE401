@@ -19,5 +19,7 @@ L'ensemble du site est entièrement intégré en français et en anglais.
 ![SCSS Badge](https://img.shields.io/badge/Sass/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
+![greenscore](https://github.com/QBUTEAU/GreenScore_SAE401/assets/125262611/a1f8a5fa-bc0d-4998-914c-914c844b7b61)
+
 ### © 2024 [Quentin Buteau](http://qbuteau.fr) - [Jathushan Selvarajah](http://mmi22g05.mmi-troyes.fr) - [Okesse Smith](http://mmi22g07.mmi-troyes.fr/portfolio/) - [Axel Tribondeau](http://mmi22g11.mmi-troyes.fr/portfolio) | Tous droits réservés
  
